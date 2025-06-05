@@ -1,0 +1,5 @@
+{
+    "watch": ["api-docs.json", "openapi-ts.config.cjs"],
+    "ignore": ["src/*"],
+    "exec": "yarn generate"
+}
