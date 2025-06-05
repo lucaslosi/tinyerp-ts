@@ -1,0 +1,110 @@
+name: Check API Updates
+
+on:
+  schedule:
+    # Run weekly on Monday at 00:00 UTC
+    - cron: "0 0 * * 1"
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  check-and-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Download latest Swagger JSON and override existing
+        run: |
+          curl -s https://erp.tiny.com.br/public-api/v3/swagger/swagger.json -o api-cache/current-swagger.json
+
+      - name: Setup Git User
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+
+      - name: Check for changes with Git
+        id: git_changes
+        run: |
+          if [[ -n $(git status -s api-cache/current-swagger.json) ]]; then
+            echo "Changes detected in the API"
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "No changes detected in the API"
+            echo "changed=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+      - name: Generate SDK
+        if: steps.git_changes.outputs.changed == 'true'
+        run: npm run generate
+
+      - name: Get current version
+        if: steps.git_changes.outputs.changed == 'true'
+        id: package_version
+        run: |
+          CURRENT_VERSION=$(node -p "require('./package.json').version")
+          echo "current=$CURRENT_VERSION" >> $GITHUB_OUTPUT
+
+      - name: Bump patch version
+        if: steps.git_changes.outputs.changed == 'true'
+        id: bump_version
+        run: |
+          # Split the version into parts
+          IFS='.' read -r -a VERSION_PARTS <<< "${{ steps.package_version.outputs.current }}"
+          MAJOR=${VERSION_PARTS[0]}
+          MINOR=${VERSION_PARTS[1]}
+          PATCH=$((${VERSION_PARTS[2]} + 1))
+          NEW_VERSION="$MAJOR.$MINOR.$PATCH"
+
+          # Update package.json with new version
+          npm version $NEW_VERSION --no-git-tag-version
+
+          echo "new=$NEW_VERSION" >> $GITHUB_OUTPUT
+
+      - name: Build
+        if: steps.git_changes.outputs.changed == 'true'
+        run: npm run build
+
+      - name: Commit changes
+        if: steps.git_changes.outputs.changed == 'true'
+        run: |
+          git add api-cache/current-swagger.json
+          git add package.json
+          git add package-lock.json
+          git commit -m "chore: update API to version ${{ steps.bump_version.outputs.new }}"
+
+      - name: Create Tag
+        if: steps.git_changes.outputs.changed == 'true'
+        run: |
+          git tag v${{ steps.bump_version.outputs.new }}
+          git push --tags origin main
+
+      - name: Push changes
+        if: steps.git_changes.outputs.changed == 'true'
+        run: git push origin main
+
+      - name: Create Release
+        if: steps.git_changes.outputs.changed == 'true'
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ steps.bump_version.outputs.new }}
+          release_name: Release v${{ steps.bump_version.outputs.new }}
+          body: |
+            Automated release after API changes detected.
+
+            Changes detected in the Tiny ERP API, SDK updated automatically.
+          draft: false
+          prerelease: false

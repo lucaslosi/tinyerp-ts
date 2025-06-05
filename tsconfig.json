@@ -20,7 +20,6 @@
     "strictNullChecks": false,
     "target": "es2021"
   },
-  "main": "./src/index.ts",
-  "include": ["../sdk/src/**/*"],
+  "include": ["src/**/*"],
   "exclude": ["dist", "node_modules", "openapi-ts.config.cjs"]
 }

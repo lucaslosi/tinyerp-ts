@@ -1,17 +1,39 @@
 {
+  "author": "Lucas Losi <@lucaslosi>",
+  "description": "SDK para a API do Tiny ERP em TypeScript",
   "devDependencies": {
     "@hey-api/openapi-ts": "0.70.0",
     "@types/node": "^20.17.57",
     "nodemon": "^3.1.10",
     "typescript": "5.8.3"
   },
-  "main": "src/index.ts",
-  "name": "@mono-direct/sdk",
-  "private": true,
-  "scripts": {
-    "build": "openapi-ts",
-    "dev": "nodemon",
-    "generate": "openapi-ts"
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "tiny",
+    "erp",
+    "sdk",
+    "typescript",
+    "api",
+    "olist"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "tinyerp-ts",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucaslosi/tinyerp-js.git"
   },
+  "scripts": {
+    "generate": "openapi-ts",
+    "validate": "node scripts/validate-generation.js",
+    "dev": "nodemon",
+    "build": "tsc"
+  },
+  "types": "dist/index.d.ts",
   "version": "1.0.0"
 }
