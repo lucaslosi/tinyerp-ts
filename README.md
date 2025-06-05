@@ -13,11 +13,11 @@ Este pacote fornece uma integração fácil com a API do Tiny ERP, transformando
 ## Instalação
 
 ```bash
-npm install tinyerp-js
+npm install tinyerp-ts
 # ou
-yarn add tinyerp-js
+yarn add tinyerp-ts
 # ou
-pnpm add tinyerp-js
+pnpm add tinyerp-ts
 ```
 
 ## Configuração
@@ -25,7 +25,7 @@ pnpm add tinyerp-js
 Antes de usar o SDK, você precisa configurar com seu token de acesso:
 
 ```typescript
-import { OpenAPI } from "tinyerp-js";
+import { OpenAPI } from "tinyerp-ts";
 
 // Configure a API com seu token
 OpenAPI.TOKEN = "seu-token-aqui";
@@ -37,7 +37,7 @@ OpenAPI.TOKEN = "seu-token-aqui";
 ## Exemplo de Uso
 
 ```typescript
-import { OpenAPI, listarProdutosAction } from "tinyerp-js";
+import { OpenAPI, listarProdutosAction } from "tinyerp-ts";
 
 // Configure o token
 OpenAPI.TOKEN = "seu-token-aqui";
