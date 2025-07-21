@@ -92,15 +92,18 @@
                         "parameter": "orderBy",
                         "name": "orderBy",
                         "in": "query",
-                        "description": "Define a ordenação da listagem por ordem crescente ou decrescente",
+                        "description": "Define a ordenação da listagem por ordem crescente ou decrescente\n- asc - Crescente\n- desc - Descrescente",
                         "required": false,
                         "schema": {
                             "enum": [
-                                "asc - Crescente",
-                                "desc - Descrescente"
+                                "asc",
+                                "desc"
                             ]
                         },
-                        "example": "asc"
+                        "x-enumDescriptions": [
+                            "asc - Crescente",
+                            "desc - Descrescente"
+                        ]
                     },
                     {
                         "name": "limit",
@@ -199,18 +202,24 @@
                         "parameter": "situacaoContasPagar",
                         "name": "situacao",
                         "in": "query",
-                        "description": "Pesquisa por situação de contas a pagar",
+                        "description": "Pesquisa por situação de contas a pagar\n- aberto - Aberto\n- cancelada - Cancelada\n- pago - Pago\n- parcial - Parcial\n- prevista - Prevista",
                         "required": false,
                         "schema": {
                             "enum": [
-                                "aberto - Aberto",
-                                "cancelada - Cancelada",
-                                "pago - Pago",
-                                "parcial - Parcial",
-                                "prevista - Prevista"
+                                "aberto",
+                                "cancelada",
+                                "pago",
+                                "parcial",
+                                "prevista"
                             ]
                         },
-                        "example": "aberto"
+                        "x-enumDescriptions": [
+                            "aberto - Aberto",
+                            "cancelada - Cancelada",
+                            "pago - Pago",
+                            "parcial - Parcial",
+                            "prevista - Prevista"
+                        ]
                     },
                     {
                         "parameter": "dataInicialEmissaoContasPagar",
@@ -304,15 +313,18 @@
                         "parameter": "orderBy",
                         "name": "orderBy",
                         "in": "query",
-                        "description": "Define a ordenação da listagem por ordem crescente ou decrescente",
+                        "description": "Define a ordenação da listagem por ordem crescente ou decrescente\n- asc - Crescente\n- desc - Descrescente",
                         "required": false,
                         "schema": {
                             "enum": [
-                                "asc - Crescente",
-                                "desc - Descrescente"
+                                "asc",
+                                "desc"
                             ]
                         },
-                        "example": "asc"
+                        "x-enumDescriptions": [
+                            "asc - Crescente",
+                            "desc - Descrescente"
+                        ]
                     },
                     {
                         "name": "limit",
@@ -769,18 +781,24 @@
                         "parameter": "situacaoContasReceber",
                         "name": "situacao",
                         "in": "query",
-                        "description": "Pesquisa por situação de contas a receber",
+                        "description": "Pesquisa por situação de contas a receber\n- aberto - Aberto\n- cancelada - Cancelada\n- pago - Pago\n- parcial - Parcial\n- prevista - Prevista",
                         "required": false,
                         "schema": {
                             "enum": [
-                                "aberto - Aberto",
-                                "cancelada - Cancelada",
-                                "pago - Pago",
-                                "parcial - Parcial",
-                                "prevista - Prevista"
+                                "aberto",
+                                "cancelada",
+                                "pago",
+                                "parcial",
+                                "prevista"
                             ]
                         },
-                        "example": "aberto"
+                        "x-enumDescriptions": [
+                            "aberto - Aberto",
+                            "cancelada - Cancelada",
+                            "pago - Pago",
+                            "parcial - Parcial",
+                            "prevista - Prevista"
+                        ]
                     },
                     {
                         "parameter": "dataInicialEmissaoContasReceber",
@@ -883,15 +901,18 @@
                         "parameter": "orderBy",
                         "name": "orderBy",
                         "in": "query",
-                        "description": "Define a ordenação da listagem por ordem crescente ou decrescente",
+                        "description": "Define a ordenação da listagem por ordem crescente ou decrescente\n- asc - Crescente\n- desc - Descrescente",
                         "required": false,
                         "schema": {
                             "enum": [
-                                "asc - Crescente",
-                                "desc - Descrescente"
+                                "asc",
+                                "desc"
                             ]
                         },
-                        "example": "asc"
+                        "x-enumDescriptions": [
+                            "asc - Crescente",
+                            "desc - Descrescente"
+                        ]
                     },
                     {
                         "name": "limit",
@@ -1439,17 +1460,22 @@
                         "parameter": "situacaoContato",
                         "name": "situacao",
                         "in": "query",
-                        "description": "Pesquisa por situacao",
+                        "description": "Pesquisa por situacao\n- B - Ativo\n- A - Ativo Com Acesso Sistema\n- I - Inativo\n- E - Excluido",
                         "required": false,
                         "schema": {
                             "enum": [
-                                "B - Ativo",
-                                "A - Ativo Com Acesso Sistema",
-                                "I - Inativo",
-                                "E - Excluido"
+                                "B",
+                                "A",
+                                "I",
+                                "E"
                             ]
                         },
-                        "example": "B"
+                        "x-enumDescriptions": [
+                            "B - Ativo",
+                            "A - Ativo Com Acesso Sistema",
+                            "I - Inativo",
+                            "E - Excluido"
+                        ]
                     },
                     {
                         "parameter": "idVendedorContato",
@@ -1507,15 +1533,18 @@
                         "parameter": "orderBy",
                         "name": "orderBy",
                         "in": "query",
-                        "description": "Define a ordenação da listagem por ordem crescente ou decrescente",
+                        "description": "Define a ordenação da listagem por ordem crescente ou decrescente\n- asc - Crescente\n- desc - Descrescente",
                         "required": false,
                         "schema": {
                             "enum": [
-                                "asc - Crescente",
-                                "desc - Descrescente"
+                                "asc",
+                                "desc"
                             ]
                         },
-                        "example": "asc"
+                        "x-enumDescriptions": [
+                            "asc - Crescente",
+                            "desc - Descrescente"
+                        ]
                     },
                     {
                         "name": "limit",
@@ -2317,15 +2346,18 @@
                         "parameter": "orderBy",
                         "name": "orderBy",
                         "in": "query",
-                        "description": "Define a ordenação da listagem por ordem crescente ou decrescente",
+                        "description": "Define a ordenação da listagem por ordem crescente ou decrescente\n- asc - Crescente\n- desc - Descrescente",
                         "required": false,
                         "schema": {
                             "enum": [
-                                "asc - Crescente",
-                                "desc - Descrescente"
+                                "asc",
+                                "desc"
                             ]
                         },
-                        "example": "asc"
+                        "x-enumDescriptions": [
+                            "asc - Crescente",
+                            "desc - Descrescente"
+                        ]
                     },
                     {
                         "name": "limit",
@@ -2673,81 +2705,139 @@
                         "parameter": "tipoFormaEnvio",
                         "name": "tipo",
                         "in": "query",
-                        "description": "Pesquisa por tipo de forma de envio",
+                        "description": "Pesquisa por tipo de forma de envio\n- 0 - Sem Frete\n- 1 - Correios\n- 2 - Transportadora\n- 3 - Mercado Envios\n- 4 - B2w Entrega\n- 5 - Correios Ff\n- 6 - Customizado\n- 7 - Jadlog\n- 8 - Totalexpress\n- 9 - Olist\n- 10 - Gateway\n- 11 - Magalu Entregas\n- 12 - Shopee Envios\n- 13 - Ns Entregas\n- 14 - Viavarejo Envvias\n- 15 - Madeira Envios\n- 16 - Ali Envios\n- 17 - Loggi\n- 18 - Conecta La Etiquetas\n- 19 - Amazon Dba\n- 20 - Magalu Fulfillment\n- 21 - Ns Magalu Entregas\n- 22 - Shein Envios\n- 23 - Mandae\n- 24 - Olist Envios\n- 25 - Kwai Envios\n- 26 - Beleza Envios\n- 27 - Tiktok Envios",
                         "required": false,
                         "schema": {
                             "enum": [
-                                "0 - Sem Frete",
-                                "1 - Correios",
-                                "2 - Transportadora",
-                                "3 - Mercado Envios",
-                                "4 - B2w Entrega",
-                                "5 - Correios Ff",
-                                "6 - Customizado",
-                                "7 - Jadlog",
-                                "8 - Totalexpress",
-                                "9 - Olist",
-                                "10 - Gateway",
-                                "11 - Magalu Entregas",
-                                "12 - Shopee Envios",
-                                "13 - Ns Entregas",
-                                "14 - Viavarejo Envvias",
-                                "15 - Madeira Envios",
-                                "16 - Ali Envios",
-                                "17 - Loggi",
-                                "18 - Conecta La Etiquetas",
-                                "19 - Amazon Dba",
-                                "20 - Magalu Fulfillment",
-                                "21 - Ns Magalu Entregas",
-                                "22 - Shein Envios",
-                                "23 - Mandae",
-                                "24 - Olist Envios",
-                                "25 - Kwai Envios",
-                                "26 - Beleza Envios",
-                                "27 - Tiktok Envios"
+                                0,
+                                1,
+                                2,
+                                3,
+                                4,
+                                5,
+                                6,
+                                7,
+                                8,
+                                9,
+                                10,
+                                11,
+                                12,
+                                13,
+                                14,
+                                15,
+                                16,
+                                17,
+                                18,
+                                19,
+                                20,
+                                21,
+                                22,
+                                23,
+                                24,
+                                25,
+                                26,
+                                27
                             ]
                         },
-                        "example": "0"
+                        "x-enumDescriptions": [
+                            "0 - Sem Frete",
+                            "1 - Correios",
+                            "2 - Transportadora",
+                            "3 - Mercado Envios",
+                            "4 - B2w Entrega",
+                            "5 - Correios Ff",
+                            "6 - Customizado",
+                            "7 - Jadlog",
+                            "8 - Totalexpress",
+                            "9 - Olist",
+                            "10 - Gateway",
+                            "11 - Magalu Entregas",
+                            "12 - Shopee Envios",
+                            "13 - Ns Entregas",
+                            "14 - Viavarejo Envvias",
+                            "15 - Madeira Envios",
+                            "16 - Ali Envios",
+                            "17 - Loggi",
+                            "18 - Conecta La Etiquetas",
+                            "19 - Amazon Dba",
+                            "20 - Magalu Fulfillment",
+                            "21 - Ns Magalu Entregas",
+                            "22 - Shein Envios",
+                            "23 - Mandae",
+                            "24 - Olist Envios",
+                            "25 - Kwai Envios",
+                            "26 - Beleza Envios",
+                            "27 - Tiktok Envios"
+                        ]
                     },
                     {
                         "parameter": "situacaoFormaEnvio",
                         "name": "situacao",
                         "in": "query",
-                        "description": "Pesquisa por situação da forma de envio",
+                        "description": "Pesquisa por situação da forma de envio\n- 0 - Sem Frete\n- 1 - Correios\n- 2 - Transportadora\n- 3 - Mercado Envios\n- 4 - B2w Entrega\n- 5 - Correios Ff\n- 6 - Customizado\n- 7 - Jadlog\n- 8 - Totalexpress\n- 9 - Olist\n- 10 - Gateway\n- 11 - Magalu Entregas\n- 12 - Shopee Envios\n- 13 - Ns Entregas\n- 14 - Viavarejo Envvias\n- 15 - Madeira Envios\n- 16 - Ali Envios\n- 17 - Loggi\n- 18 - Conecta La Etiquetas\n- 19 - Amazon Dba\n- 20 - Magalu Fulfillment\n- 21 - Ns Magalu Entregas\n- 22 - Shein Envios\n- 23 - Mandae\n- 24 - Olist Envios\n- 25 - Kwai Envios\n- 26 - Beleza Envios\n- 27 - Tiktok Envios",
                         "required": false,
                         "schema": {
                             "enum": [
-                                "0 - Sem Frete",
-                                "1 - Correios",
-                                "2 - Transportadora",
-                                "3 - Mercado Envios",
-                                "4 - B2w Entrega",
-                                "5 - Correios Ff",
-                                "6 - Customizado",
-                                "7 - Jadlog",
-                                "8 - Totalexpress",
-                                "9 - Olist",
-                                "10 - Gateway",
-                                "11 - Magalu Entregas",
-                                "12 - Shopee Envios",
-                                "13 - Ns Entregas",
-                                "14 - Viavarejo Envvias",
-                                "15 - Madeira Envios",
-                                "16 - Ali Envios",
-                                "17 - Loggi",
-                                "18 - Conecta La Etiquetas",
-                                "19 - Amazon Dba",
-                                "20 - Magalu Fulfillment",
-                                "21 - Ns Magalu Entregas",
-                                "22 - Shein Envios",
-                                "23 - Mandae",
-                                "24 - Olist Envios",
-                                "25 - Kwai Envios",
-                                "26 - Beleza Envios",
-                                "27 - Tiktok Envios"
+                                0,
+                                1,
+                                2,
+                                3,
+                                4,
+                                5,
+                                6,
+                                7,
+                                8,
+                                9,
+                                10,
+                                11,
+                                12,
+                                13,
+                                14,
+                                15,
+                                16,
+                                17,
+                                18,
+                                19,
+                                20,
+                                21,
+                                22,
+                                23,
+                                24,
+                                25,
+                                26,
+                                27
                             ]
                         },
-                        "example": "0"
+                        "x-enumDescriptions": [
+                            "0 - Sem Frete",
+                            "1 - Correios",
+                            "2 - Transportadora",
+                            "3 - Mercado Envios",
+                            "4 - B2w Entrega",
+                            "5 - Correios Ff",
+                            "6 - Customizado",
+                            "7 - Jadlog",
+                            "8 - Totalexpress",
+                            "9 - Olist",
+                            "10 - Gateway",
+                            "11 - Magalu Entregas",
+                            "12 - Shopee Envios",
+                            "13 - Ns Entregas",
+                            "14 - Viavarejo Envvias",
+                            "15 - Madeira Envios",
+                            "16 - Ali Envios",
+                            "17 - Loggi",
+                            "18 - Conecta La Etiquetas",
+                            "19 - Amazon Dba",
+                            "20 - Magalu Fulfillment",
+                            "21 - Ns Magalu Entregas",
+                            "22 - Shein Envios",
+                            "23 - Mandae",
+                            "24 - Olist Envios",
+                            "25 - Kwai Envios",
+                            "26 - Beleza Envios",
+                            "27 - Tiktok Envios"
+                        ]
                     },
                     {
                         "name": "limit",
@@ -2906,15 +2996,18 @@
                         "parameter": "situacaoFormaPagamento",
                         "name": "situacao",
                         "in": "query",
-                        "description": "Pesquisa por situação da forma de pagamento",
+                        "description": "Pesquisa por situação da forma de pagamento\n- 1 - Habilitada\n- 2 - Desabilitada",
                         "required": false,
                         "schema": {
                             "enum": [
-                                "1 - Habilitada",
-                                "2 - Desabilitada"
+                                1,
+                                2
                             ]
                         },
-                        "example": "1"
+                        "x-enumDescriptions": [
+                            "1 - Habilitada",
+                            "2 - Desabilitada"
+                        ]
                     },
                     {
                         "name": "limit",
@@ -4074,15 +4167,18 @@
                         "parameter": "tipoNota",
                         "name": "tipo",
                         "in": "query",
-                        "description": "Pesquisa por tipo de nota",
+                        "description": "Pesquisa por tipo de nota\n- E - Entrada\n- S - Saida",
                         "required": false,
                         "schema": {
                             "enum": [
-                                "E - Entrada",
-                                "S - Saida"
+                                "E",
+                                "S"
                             ]
                         },
-                        "example": "E"
+                        "x-enumDescriptions": [
+                            "E - Entrada",
+                            "S - Saida"
+                        ]
                     },
                     {
                         "parameter": "numeroNota",
@@ -4130,23 +4226,34 @@
                         "parameter": "situacaoNota",
                         "name": "situacao",
                         "in": "query",
-                        "description": "Pesquisa pela situacão da nota",
+                        "description": "Pesquisa pela situacão da nota\n- 1 - Pendente\n- 2 - Emitida\n- 3 - Cancelada\n- 4 - Enviada Aguardando Recibo\n- 5 - Rejeitada\n- 6 - Autorizada\n- 7 - Emitida Danfe\n- 8 - Registrada\n- 9 - Enviada Aguardando Protocolo\n- 10 - Denegada",
                         "required": false,
                         "schema": {
                             "enum": [
-                                "1 - Pendente",
-                                "2 - Emitida",
-                                "3 - Cancelada",
-                                "4 - Enviada Aguardando Recibo",
-                                "5 - Rejeitada",
-                                "6 - Autorizada",
-                                "7 - Emitida Danfe",
-                                "8 - Registrada",
-                                "9 - Enviada Aguardando Protocolo",
-                                "10 - Denegada"
+                                1,
+                                2,
+                                3,
+                                4,
+                                5,
+                                6,
+                                7,
+                                8,
+                                9,
+                                10
                             ]
                         },
-                        "example": "1"
+                        "x-enumDescriptions": [
+                            "1 - Pendente",
+                            "2 - Emitida",
+                            "3 - Cancelada",
+                            "4 - Enviada Aguardando Recibo",
+                            "5 - Rejeitada",
+                            "6 - Autorizada",
+                            "7 - Emitida Danfe",
+                            "8 - Registrada",
+                            "9 - Enviada Aguardando Protocolo",
+                            "10 - Denegada"
+                        ]
                     },
                     {
                         "parameter": "numeroPedidoEcommerce",
@@ -4195,15 +4302,18 @@
                         "parameter": "orderBy",
                         "name": "orderBy",
                         "in": "query",
-                        "description": "Define a ordenação da listagem por ordem crescente ou decrescente",
+                        "description": "Define a ordenação da listagem por ordem crescente ou decrescente\n- asc - Crescente\n- desc - Descrescente",
                         "required": false,
                         "schema": {
                             "enum": [
-                                "asc - Crescente",
-                                "desc - Descrescente"
+                                "asc",
+                                "desc"
                             ]
                         },
-                        "example": "asc"
+                        "x-enumDescriptions": [
+                            "asc - Crescente",
+                            "desc - Descrescente"
+                        ]
                     },
                     {
                         "name": "limit",
@@ -4724,31 +4834,39 @@
                         "parameter": "situacaoOrdemCompra",
                         "name": "situacao",
                         "in": "query",
-                        "description": "Pesquisa através da situação da ordem de compra",
+                        "description": "Pesquisa através da situação da ordem de compra\n- 0 - Em Aberto\n- 1 - Atendido\n- 2 - Cancelado\n- 3 - Em Andamento",
                         "required": false,
                         "schema": {
                             "enum": [
-                                "0 - Em Aberto",
-                                "1 - Atendido",
-                                "2 - Cancelado",
-                                "3 - Em Andamento"
+                                0,
+                                1,
+                                2,
+                                3
                             ]
                         },
-                        "example": "0"
+                        "x-enumDescriptions": [
+                            "0 - Em Aberto",
+                            "1 - Atendido",
+                            "2 - Cancelado",
+                            "3 - Em Andamento"
+                        ]
                     },
                     {
                         "parameter": "orderBy",
                         "name": "orderBy",
                         "in": "query",
-                        "description": "Define a ordenação da listagem por ordem crescente ou decrescente",
+                        "description": "Define a ordenação da listagem por ordem crescente ou decrescente\n- asc - Crescente\n- desc - Descrescente",
                         "required": false,
                         "schema": {
                             "enum": [
-                                "asc - Crescente",
-                                "desc - Descrescente"
+                                "asc",
+                                "desc"
                             ]
                         },
-                        "example": "asc"
+                        "x-enumDescriptions": [
+                            "asc - Crescente",
+                            "desc - Descrescente"
+                        ]
                     },
                     {
                         "name": "limit",
@@ -5209,21 +5327,30 @@
                         "parameter": "situacaoOrdemServico",
                         "name": "situacao",
                         "in": "query",
-                        "description": "Pesquisa por situação de ordem de servico",
+                        "description": "Pesquisa por situação de ordem de servico\n- 4 - Nao Aprovada\n- 3 - Finalizada\n- 0 - Em Aberto\n- 2 - Serv Concluido\n- 1 - Orcada\n- 5 - Aprovada\n- 6 - Em Andamento\n- 7 - Cancelada",
                         "required": false,
                         "schema": {
                             "enum": [
-                                "4 - Nao Aprovada",
-                                "3 - Finalizada",
-                                "0 - Em Aberto",
-                                "2 - Serv Concluido",
-                                "1 - Orcada",
-                                "5 - Aprovada",
-                                "6 - Em Andamento",
-                                "7 - Cancelada"
+                                4,
+                                3,
+                                0,
+                                2,
+                                1,
+                                5,
+                                6,
+                                7
                             ]
                         },
-                        "example": "4"
+                        "x-enumDescriptions": [
+                            "4 - Nao Aprovada",
+                            "3 - Finalizada",
+                            "0 - Em Aberto",
+                            "2 - Serv Concluido",
+                            "1 - Orcada",
+                            "5 - Aprovada",
+                            "6 - Em Andamento",
+                            "7 - Cancelada"
+                        ]
                     },
                     {
                         "parameter": "dataInicialEmissaoOrdemServico",
@@ -5285,15 +5412,18 @@
                         "parameter": "orderBy",
                         "name": "orderBy",
                         "in": "query",
-                        "description": "Define a ordenação da listagem por ordem crescente ou decrescente",
+                        "description": "Define a ordenação da listagem por ordem crescente ou decrescente\n- asc - Crescente\n- desc - Descrescente",
                         "required": false,
                         "schema": {
                             "enum": [
-                                "asc - Crescente",
-                                "desc - Descrescente"
+                                "asc",
+                                "desc"
                             ]
                         },
-                        "example": "asc"
+                        "x-enumDescriptions": [
+                            "asc - Crescente",
+                            "desc - Descrescente"
+                        ]
                     },
                     {
                         "name": "limit",
@@ -6175,23 +6305,34 @@
                         "parameter": "situacaoPedido",
                         "name": "situacao",
                         "in": "query",
-                        "description": "Pesquisa com base na situação informada",
+                        "description": "Pesquisa com base na situação informada\n- 8 - Dados Incompletos\n- 0 - Aberta\n- 3 - Aprovada\n- 4 - Preparando Envio\n- 1 - Faturada\n- 7 - Pronto Envio\n- 5 - Enviada\n- 6 - Entregue\n- 2 - Cancelada\n- 9 - Nao Entregue",
                         "required": false,
                         "schema": {
                             "enum": [
-                                "8 - Dados Incompletos",
-                                "0 - Aberta",
-                                "3 - Aprovada",
-                                "4 - Preparando Envio",
-                                "1 - Faturada",
-                                "7 - Pronto Envio",
-                                "5 - Enviada",
-                                "6 - Entregue",
-                                "2 - Cancelada",
-                                "9 - Nao Entregue"
+                                8,
+                                0,
+                                3,
+                                4,
+                                1,
+                                7,
+                                5,
+                                6,
+                                2,
+                                9
                             ]
                         },
-                        "example": "8"
+                        "x-enumDescriptions": [
+                            "8 - Dados Incompletos",
+                            "0 - Aberta",
+                            "3 - Aprovada",
+                            "4 - Preparando Envio",
+                            "1 - Faturada",
+                            "7 - Pronto Envio",
+                            "5 - Enviada",
+                            "6 - Entregue",
+                            "2 - Cancelada",
+                            "9 - Nao Entregue"
+                        ]
                     },
                     {
                         "parameter": "numeroPedidoEcommercePedido",
@@ -6230,15 +6371,18 @@
                         "parameter": "orderBy",
                         "name": "orderBy",
                         "in": "query",
-                        "description": "Define a ordenação da listagem por ordem crescente ou decrescente",
+                        "description": "Define a ordenação da listagem por ordem crescente ou decrescente\n- asc - Crescente\n- desc - Descrescente",
                         "required": false,
                         "schema": {
                             "enum": [
-                                "asc - Crescente",
-                                "desc - Descrescente"
+                                "asc",
+                                "desc"
                             ]
                         },
-                        "example": "asc"
+                        "x-enumDescriptions": [
+                            "asc - Crescente",
+                            "desc - Descrescente"
+                        ]
                     },
                     {
                         "name": "limit",
@@ -7718,17 +7862,22 @@
                         "parameter": "situacaoSeparacao",
                         "name": "situacao",
                         "in": "query",
-                        "description": "Pesquisa por situacao da separação.",
+                        "description": "Pesquisa por situacao da separação.\n- 1 - Sit Aguardando Separacao\n- 2 - Sit Separada\n- 3 - Sit Embalada\n- 4 - Sit Em Separacao",
                         "required": false,
                         "schema": {
                             "enum": [
-                                "1 - Sit Aguardando Separacao",
-                                "2 - Sit Separada",
-                                "3 - Sit Embalada",
-                                "4 - Sit Em Separacao"
+                                1,
+                                2,
+                                3,
+                                4
                             ]
                         },
-                        "example": "1"
+                        "x-enumDescriptions": [
+                            "1 - Sit Aguardando Separacao",
+                            "2 - Sit Separada",
+                            "3 - Sit Embalada",
+                            "4 - Sit Em Separacao"
+                        ]
                     },
                     {
                         "parameter": "idFormaEnvio",
@@ -7766,15 +7915,18 @@
                         "parameter": "orderBy",
                         "name": "orderBy",
                         "in": "query",
-                        "description": "Define a ordenação da listagem por ordem crescente ou decrescente",
+                        "description": "Define a ordenação da listagem por ordem crescente ou decrescente\n- asc - Crescente\n- desc - Descrescente",
                         "required": false,
                         "schema": {
                             "enum": [
-                                "asc - Crescente",
-                                "desc - Descrescente"
+                                "asc",
+                                "desc"
                             ]
                         },
-                        "example": "asc"
+                        "x-enumDescriptions": [
+                            "asc - Crescente",
+                            "desc - Descrescente"
+                        ]
                     },
                     {
                         "name": "limit",
@@ -8065,30 +8217,37 @@
                         "parameter": "situacaoServico",
                         "name": "situacao",
                         "in": "query",
-                        "description": "Pesquisa com base na situação informada",
+                        "description": "Pesquisa com base na situação informada\n- A - Ativo\n- I - Inativo\n- E - Excluido",
                         "required": false,
                         "schema": {
                             "enum": [
-                                "A - Ativo",
-                                "I - Inativo",
-                                "E - Excluido"
+                                "A",
+                                "I",
+                                "E"
                             ]
                         },
-                        "example": "A"
+                        "x-enumDescriptions": [
+                            "A - Ativo",
+                            "I - Inativo",
+                            "E - Excluido"
+                        ]
                     },
                     {
                         "parameter": "orderBy",
                         "name": "orderBy",
                         "in": "query",
-                        "description": "Define a ordenação da listagem por ordem crescente ou decrescente",
+                        "description": "Define a ordenação da listagem por ordem crescente ou decrescente\n- asc - Crescente\n- desc - Descrescente",
                         "required": false,
                         "schema": {
                             "enum": [
-                                "asc - Crescente",
-                                "desc - Descrescente"
+                                "asc",
+                                "desc"
                             ]
                         },
-                        "example": "asc"
+                        "x-enumDescriptions": [
+                            "asc - Crescente",
+                            "desc - Descrescente"
+                        ]
                     },
                     {
                         "name": "limit",
@@ -8578,8 +8737,20 @@
                         "nullable": true
                     },
                     "ocorrencia": {
+                        "description": "\n- U - Unica\n- W - Semanal\n- Q - Quinzenal\n- M - Mensal\n- T - Trimestral\n- S - Semestral\n- A - Anual\n- P - Parcelada",
                         "type": "string",
                         "enum": [
+                            "U",
+                            "W",
+                            "Q",
+                            "M",
+                            "T",
+                            "S",
+                            "A",
+                            "P"
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "U - Unica",
                             "W - Semanal",
                             "Q - Quinzenal",
@@ -8588,13 +8759,34 @@
                             "S - Semestral",
                             "A - Anual",
                             "P - Parcelada"
-                        ],
-                        "example": "U",
-                        "nullable": true
+                        ]
                     },
                     "formaPagamento": {
+                        "description": "\n- 0 - Nao Definida\n- 2 - Dinheiro\n- 3 - Credito\n- 4 - Debito\n- 5 - Boleto\n- 6 - Deposito\n- 7 - Cheque\n- 8 - Crediario\n- 10 - Outra\n- 12 - Duplicata Mercantil\n- 14 - Vale\n- 15 - Pix\n- 16 - Vale Alimentacao\n- 17 - Vale Refeicao\n- 18 - Vale Presente\n- 19 - Vale Combustivel\n- 20 - Deposito Bancario\n- 21 - Transferencia Bancaria Carteira Digital\n- 22 - Fidelidade Cashback Credito Virtual",
                         "type": "integer",
                         "enum": [
+                            0,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            8,
+                            10,
+                            12,
+                            14,
+                            15,
+                            16,
+                            17,
+                            18,
+                            19,
+                            20,
+                            21,
+                            22
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "0 - Nao Definida",
                             "2 - Dinheiro",
                             "3 - Credito",
@@ -8614,9 +8806,7 @@
                             "20 - Deposito Bancario",
                             "21 - Transferencia Bancaria Carteira Digital",
                             "22 - Fidelidade Cashback Credito Virtual"
-                        ],
-                        "example": "0",
-                        "nullable": true
+                        ]
                     },
                     "diaVencimento": {
                         "type": "integer",
@@ -8652,16 +8842,23 @@
                         "nullable": true
                     },
                     "situacao": {
+                        "description": "\n- aberto - Aberto\n- cancelada - Cancelada\n- pago - Pago\n- parcial - Parcial\n- prevista - Prevista",
                         "type": "string",
                         "enum": [
+                            "aberto",
+                            "cancelada",
+                            "pago",
+                            "parcial",
+                            "prevista"
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "aberto - Aberto",
                             "cancelada - Cancelada",
                             "pago - Pago",
                             "parcial - Parcial",
                             "prevista - Prevista"
-                        ],
-                        "example": "aberto",
-                        "nullable": true
+                        ]
                     },
                     "data": {
                         "type": "string",
@@ -8707,16 +8904,23 @@
                         "type": "integer"
                     },
                     "situacao": {
+                        "description": "\n- aberto - Aberto\n- cancelada - Cancelada\n- pago - Pago\n- parcial - Parcial\n- prevista - Prevista",
                         "type": "string",
                         "enum": [
+                            "aberto",
+                            "cancelada",
+                            "pago",
+                            "parcial",
+                            "prevista"
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "aberto - Aberto",
                             "cancelada - Cancelada",
                             "pago - Pago",
                             "parcial - Parcial",
                             "prevista - Prevista"
-                        ],
-                        "example": "aberto",
-                        "nullable": true
+                        ]
                     },
                     "data": {
                         "type": "string"
@@ -8736,8 +8940,19 @@
                         "nullable": true
                     },
                     "diaSemanaVencimento": {
+                        "description": "\n- 0 - Domingo\n- 1 - Segunda\n- 2 - Terca\n- 3 - Quarta\n- 4 - Quinta\n- 5 - Sexta\n- 6 - Sabado",
                         "type": "integer",
                         "enum": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "0 - Domingo",
                             "1 - Segunda",
                             "2 - Terca",
@@ -8745,9 +8960,7 @@
                             "4 - Quinta",
                             "5 - Sexta",
                             "6 - Sabado"
-                        ],
-                        "example": "0",
-                        "nullable": true
+                        ]
                     },
                     "numeroDocumento": {
                         "type": "string"
@@ -8757,8 +8970,20 @@
                         "nullable": true
                     },
                     "ocorrencia": {
+                        "description": "\n- U - Unica\n- W - Semanal\n- Q - Quinzenal\n- M - Mensal\n- T - Trimestral\n- S - Semestral\n- A - Anual\n- P - Parcelada",
                         "type": "string",
                         "enum": [
+                            "U",
+                            "W",
+                            "Q",
+                            "M",
+                            "T",
+                            "S",
+                            "A",
+                            "P"
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "U - Unica",
                             "W - Semanal",
                             "Q - Quinzenal",
@@ -8767,9 +8992,7 @@
                             "S - Semestral",
                             "A - Anual",
                             "P - Parcelada"
-                        ],
-                        "example": "U",
-                        "nullable": true
+                        ]
                     },
                     "quantidadeParcelas": {
                         "type": "integer",
@@ -8846,18 +9069,15 @@
                         "nullable": true
                     },
                     "taxa": {
-                        "type": "number",
-                        "format": "float",
+                        "type": "string",
                         "nullable": true
                     },
                     "juros": {
-                        "type": "number",
-                        "format": "float",
+                        "type": "string",
                         "nullable": true
                     },
                     "desconto": {
-                        "type": "number",
-                        "format": "float",
+                        "type": "string",
                         "nullable": true
                     },
                     "valorPago": {
@@ -8866,8 +9086,7 @@
                         "nullable": true
                     },
                     "acrescimo": {
-                        "type": "number",
-                        "format": "float",
+                        "type": "string",
                         "nullable": true
                     }
                 },
@@ -8913,8 +9132,20 @@
                         "nullable": true
                     },
                     "ocorrencia": {
+                        "description": "\n- U - Unica\n- W - Semanal\n- Q - Quinzenal\n- M - Mensal\n- T - Trimestral\n- S - Semestral\n- A - Anual\n- P - Parcelada",
                         "type": "string",
                         "enum": [
+                            "U",
+                            "W",
+                            "Q",
+                            "M",
+                            "T",
+                            "S",
+                            "A",
+                            "P"
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "U - Unica",
                             "W - Semanal",
                             "Q - Quinzenal",
@@ -8923,9 +9154,7 @@
                             "S - Semestral",
                             "A - Anual",
                             "P - Parcelada"
-                        ],
-                        "example": "U",
-                        "nullable": true
+                        ]
                     },
                     "diaVencimento": {
                         "type": "integer",
@@ -8961,16 +9190,23 @@
                         "nullable": true
                     },
                     "situacao": {
+                        "description": "\n- aberto - Aberto\n- cancelada - Cancelada\n- pago - Pago\n- parcial - Parcial\n- prevista - Prevista",
                         "type": "string",
                         "enum": [
+                            "aberto",
+                            "cancelada",
+                            "pago",
+                            "parcial",
+                            "prevista"
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "aberto - Aberto",
                             "cancelada - Cancelada",
                             "pago - Pago",
                             "parcial - Parcial",
                             "prevista - Prevista"
-                        ],
-                        "example": "aberto",
-                        "nullable": true
+                        ]
                     },
                     "data": {
                         "type": "string",
@@ -9016,16 +9252,23 @@
                         "nullable": true
                     },
                     "situacao": {
+                        "description": "\n- aberto - Aberto\n- cancelada - Cancelada\n- pago - Pago\n- parcial - Parcial\n- prevista - Prevista",
                         "type": "string",
                         "enum": [
+                            "aberto",
+                            "cancelada",
+                            "pago",
+                            "parcial",
+                            "prevista"
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "aberto - Aberto",
                             "cancelada - Cancelada",
                             "pago - Pago",
                             "parcial - Parcial",
                             "prevista - Prevista"
-                        ],
-                        "example": "aberto",
-                        "nullable": true
+                        ]
                     },
                     "data": {
                         "type": "string",
@@ -9048,8 +9291,19 @@
                         "nullable": true
                     },
                     "diaSemanaVencimento": {
+                        "description": "\n- 0 - Domingo\n- 1 - Segunda\n- 2 - Terca\n- 3 - Quarta\n- 4 - Quinta\n- 5 - Sexta\n- 6 - Sabado",
                         "type": "integer",
                         "enum": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "0 - Domingo",
                             "1 - Segunda",
                             "2 - Terca",
@@ -9057,9 +9311,7 @@
                             "4 - Quinta",
                             "5 - Sexta",
                             "6 - Sabado"
-                        ],
-                        "example": "0",
-                        "nullable": true
+                        ]
                     },
                     "numeroDocumento": {
                         "type": "string",
@@ -9070,8 +9322,20 @@
                         "nullable": true
                     },
                     "ocorrencia": {
+                        "description": "\n- U - Unica\n- W - Semanal\n- Q - Quinzenal\n- M - Mensal\n- T - Trimestral\n- S - Semestral\n- A - Anual\n- P - Parcelada",
                         "type": "string",
                         "enum": [
+                            "U",
+                            "W",
+                            "Q",
+                            "M",
+                            "T",
+                            "S",
+                            "A",
+                            "P"
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "U - Unica",
                             "W - Semanal",
                             "Q - Quinzenal",
@@ -9080,9 +9344,7 @@
                             "S - Semestral",
                             "A - Anual",
                             "P - Parcelada"
-                        ],
-                        "example": "U",
-                        "nullable": true
+                        ]
                     },
                     "quantidadeParcelas": {
                         "type": "integer",
@@ -9158,15 +9420,21 @@
                         "nullable": true
                     },
                     "tipoPessoa": {
+                        "description": "\n- J - Juridica\n- F - Fisica\n- E - Estrangeiro\n- X - Estrangeiro No Brasil",
                         "type": "string",
                         "enum": [
+                            "J",
+                            "F",
+                            "E",
+                            "X"
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "J - Juridica",
                             "F - Fisica",
                             "E - Estrangeiro",
                             "X - Estrangeiro No Brasil"
-                        ],
-                        "example": "J",
-                        "nullable": true
+                        ]
                     },
                     "cpfCnpj": {
                         "type": "string",
@@ -9255,40 +9523,57 @@
                                 "nullable": true
                             },
                             "regimeTributario": {
+                                "description": "\n- 1 - Simples Nacional\n- 2 - Simples Nacional Excesso Receita\n- 3 - Regime Normal\n- 4 - Mei",
                                 "type": "integer",
                                 "enum": [
+                                    1,
+                                    2,
+                                    3,
+                                    4
+                                ],
+                                "nullable": true,
+                                "x-enumDescriptions": [
                                     "1 - Simples Nacional",
                                     "2 - Simples Nacional Excesso Receita",
                                     "3 - Regime Normal",
                                     "4 - Mei"
-                                ],
-                                "example": "1",
-                                "nullable": true
+                                ]
                             },
                             "estadoCivil": {
+                                "description": "\n- 1 - Casado\n- 2 - Solteiro\n- 3 - Viuvo\n- 4 - Separado\n- 5 - Desquitado",
                                 "type": "integer",
                                 "enum": [
+                                    1,
+                                    2,
+                                    3,
+                                    4,
+                                    5
+                                ],
+                                "nullable": true,
+                                "x-enumDescriptions": [
                                     "1 - Casado",
                                     "2 - Solteiro",
                                     "3 - Viuvo",
                                     "4 - Separado",
                                     "5 - Desquitado"
-                                ],
-                                "example": "1",
-                                "nullable": true
+                                ]
                             },
                             "profissao": {
                                 "type": "string",
                                 "nullable": true
                             },
                             "sexo": {
+                                "description": "\n- masculino - Masculino\n- feminino - Feminino",
                                 "type": "string",
                                 "enum": [
+                                    "masculino",
+                                    "feminino"
+                                ],
+                                "nullable": true,
+                                "x-enumDescriptions": [
                                     "masculino - Masculino",
                                     "feminino - Feminino"
-                                ],
-                                "example": "masculino",
-                                "nullable": true
+                                ]
                             },
                             "dataNascimento": {
                                 "type": "string",
@@ -9320,15 +9605,21 @@
                                 "nullable": true
                             },
                             "situacao": {
+                                "description": "\n- B - Ativo\n- A - Ativo Com Acesso Sistema\n- I - Inativo\n- E - Excluido",
                                 "type": "string",
                                 "enum": [
+                                    "B",
+                                    "A",
+                                    "I",
+                                    "E"
+                                ],
+                                "nullable": true,
+                                "x-enumDescriptions": [
                                     "B - Ativo",
                                     "A - Ativo Com Acesso Sistema",
                                     "I - Inativo",
                                     "E - Excluido"
-                                ],
-                                "example": "B",
-                                "nullable": true
+                                ]
                             },
                             "observacoes": {
                                 "type": "string",
@@ -9449,15 +9740,21 @@
                                 ]
                             },
                             "situacao": {
+                                "description": "\n- B - Ativo\n- A - Ativo Com Acesso Sistema\n- I - Inativo\n- E - Excluido",
                                 "type": "string",
                                 "enum": [
+                                    "B",
+                                    "A",
+                                    "I",
+                                    "E"
+                                ],
+                                "nullable": true,
+                                "x-enumDescriptions": [
                                     "B - Ativo",
                                     "A - Ativo Com Acesso Sistema",
                                     "I - Inativo",
                                     "E - Excluido"
-                                ],
-                                "example": "B",
-                                "nullable": true
+                                ]
                             },
                             "dataCriacao": {
                                 "type": "string",
@@ -9502,16 +9799,24 @@
                         "type": "string"
                     },
                     "perfilContato": {
+                        "description": "\n- 0 - Outro\n- 1 - Cliente\n- 2 - Fornecedor\n- 3 - Vendedor\n- 4 - Transportador\n- 5 - Funcionario",
                         "type": "string",
                         "enum": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4,
+                            5
+                        ],
+                        "x-enumDescriptions": [
                             "0 - Outro",
                             "1 - Cliente",
                             "2 - Fornecedor",
                             "3 - Vendedor",
                             "4 - Transportador",
                             "5 - Funcionario"
-                        ],
-                        "example": "0"
+                        ]
                     }
                 },
                 "type": "object"
@@ -9643,14 +9948,20 @@
                         "type": "string"
                     },
                     "regimeTributario": {
+                        "description": "\n- 1 - Simples Nacional\n- 2 - Simples Nacional Excesso Receita\n- 3 - Regime Normal\n- 4 - Mei",
                         "type": "integer",
                         "enum": [
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "x-enumDescriptions": [
                             "1 - Simples Nacional",
                             "2 - Simples Nacional Excesso Receita",
                             "3 - Regime Normal",
                             "4 - Mei"
-                        ],
-                        "example": "1"
+                        ]
                     }
                 },
                 "type": "object"
@@ -9744,15 +10055,21 @@
                         "nullable": true
                     },
                     "tipo": {
+                        "description": "\n- 0 - Nao Definido\n- 1 - Envelope\n- 2 - Caixa\n- 3 - Cilindro",
                         "type": "integer",
                         "enum": [
+                            0,
+                            1,
+                            2,
+                            3
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "0 - Nao Definido",
                             "1 - Envelope",
                             "2 - Caixa",
                             "3 - Cilindro"
-                        ],
-                        "example": "0",
-                        "nullable": true
+                        ]
                     }
                 },
                 "type": "object"
@@ -9766,15 +10083,21 @@
                         "nullable": true
                     },
                     "tipo": {
+                        "description": "\n- 0 - Nao Definido\n- 1 - Envelope\n- 2 - Caixa\n- 3 - Cilindro",
                         "type": "integer",
                         "enum": [
+                            0,
+                            1,
+                            2,
+                            3
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "0 - Nao Definido",
                             "1 - Envelope",
                             "2 - Caixa",
                             "3 - Cilindro"
-                        ],
-                        "example": "0",
-                        "nullable": true
+                        ]
                     },
                     "descricao": {
                         "type": "string",
@@ -9857,14 +10180,19 @@
                         "$ref": "#/components/schemas/DepositoRequestModel"
                     },
                     "tipo": {
+                        "description": "\n- B - Balanco\n- E - Entrada\n- S - Saida",
                         "type": "string",
                         "enum": [
+                            "B",
+                            "E",
+                            "S"
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "B - Balanco",
                             "E - Entrada",
                             "S - Saida"
-                        ],
-                        "example": "B",
-                        "nullable": true
+                        ]
                     },
                     "data": {
                         "type": "string",
@@ -10202,8 +10530,22 @@
                         "nullable": true
                     },
                     "situacao": {
+                        "description": "\n- 1 - Pendente\n- 2 - Emitida\n- 3 - Cancelada\n- 4 - Enviada Aguardando Recibo\n- 5 - Rejeitada\n- 6 - Autorizada\n- 7 - Emitida Danfe\n- 8 - Registrada\n- 9 - Enviada Aguardando Protocolo\n- 10 - Denegada",
                         "type": "integer",
                         "enum": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            8,
+                            9,
+                            10
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "1 - Pendente",
                             "2 - Emitida",
                             "3 - Cancelada",
@@ -10214,9 +10556,7 @@
                             "8 - Registrada",
                             "9 - Enviada Aguardando Protocolo",
                             "10 - Denegada"
-                        ],
-                        "example": "1",
-                        "nullable": true
+                        ]
                     }
                 },
                 "type": "object"
@@ -10268,8 +10608,22 @@
                         "nullable": true
                     },
                     "situacao": {
+                        "description": "\n- 8 - Dados Incompletos\n- 0 - Aberta\n- 3 - Aprovada\n- 4 - Preparando Envio\n- 1 - Faturada\n- 7 - Pronto Envio\n- 5 - Enviada\n- 6 - Entregue\n- 2 - Cancelada\n- 9 - Nao Entregue",
                         "type": "integer",
                         "enum": [
+                            8,
+                            0,
+                            3,
+                            4,
+                            1,
+                            7,
+                            5,
+                            6,
+                            2,
+                            9
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "8 - Dados Incompletos",
                             "0 - Aberta",
                             "3 - Aprovada",
@@ -10280,9 +10634,7 @@
                             "6 - Entregue",
                             "2 - Cancelada",
                             "9 - Nao Entregue"
-                        ],
-                        "example": "8",
-                        "nullable": true
+                        ]
                     }
                 },
                 "type": "object"
@@ -10425,8 +10777,40 @@
                         "nullable": true
                     },
                     "tipo": {
+                        "description": "\n- 0 - Sem Frete\n- 1 - Correios\n- 2 - Transportadora\n- 3 - Mercado Envios\n- 4 - B2w Entrega\n- 5 - Correios Ff\n- 6 - Customizado\n- 7 - Jadlog\n- 8 - Totalexpress\n- 9 - Olist\n- 10 - Gateway\n- 11 - Magalu Entregas\n- 12 - Shopee Envios\n- 13 - Ns Entregas\n- 14 - Viavarejo Envvias\n- 15 - Madeira Envios\n- 16 - Ali Envios\n- 17 - Loggi\n- 18 - Conecta La Etiquetas\n- 19 - Amazon Dba\n- 20 - Magalu Fulfillment\n- 21 - Ns Magalu Entregas\n- 22 - Shein Envios\n- 23 - Mandae\n- 24 - Olist Envios\n- 25 - Kwai Envios\n- 26 - Beleza Envios\n- 27 - Tiktok Envios",
                         "type": "string",
                         "enum": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            8,
+                            9,
+                            10,
+                            11,
+                            12,
+                            13,
+                            14,
+                            15,
+                            16,
+                            17,
+                            18,
+                            19,
+                            20,
+                            21,
+                            22,
+                            23,
+                            24,
+                            25,
+                            26,
+                            27
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "0 - Sem Frete",
                             "1 - Correios",
                             "2 - Transportadora",
@@ -10455,18 +10839,20 @@
                             "25 - Kwai Envios",
                             "26 - Beleza Envios",
                             "27 - Tiktok Envios"
-                        ],
-                        "example": "0",
-                        "nullable": true
+                        ]
                     },
                     "situacao": {
+                        "description": "\n- 1 - Habilitada\n- 2 - Desabilitada",
                         "type": "string",
                         "enum": [
+                            1,
+                            2
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "1 - Habilitada",
                             "2 - Desabilitada"
-                        ],
-                        "example": "1",
-                        "nullable": true
+                        ]
                     }
                 },
                 "type": "object"
@@ -10564,8 +10950,19 @@
                         "nullable": true
                     },
                     "tipoEntrega": {
+                        "description": "\n- 0 - Nao Definida\n- 1 - Normal\n- 2 - Expressa\n- 3 - Agendada\n- 4 - Economica\n- 5 - Super Expressa\n- 6 - Retirada",
                         "type": "string",
                         "enum": [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "0 - Nao Definida",
                             "1 - Normal",
                             "2 - Expressa",
@@ -10573,9 +10970,7 @@
                             "4 - Economica",
                             "5 - Super Expressa",
                             "6 - Retirada"
-                        ],
-                        "example": "0",
-                        "nullable": true
+                        ]
                     }
                 },
                 "type": "object"
@@ -10617,13 +11012,17 @@
                         "nullable": true
                     },
                     "situacao": {
+                        "description": "\n- 1 - Habilitada\n- 2 - Desabilitada",
                         "type": "string",
                         "enum": [
+                            1,
+                            2
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "1 - Habilitada",
                             "2 - Desabilitada"
-                        ],
-                        "example": "1",
-                        "nullable": true
+                        ]
                     }
                 },
                 "type": "object"
@@ -11039,8 +11438,21 @@
                         "type": "string"
                     },
                     "situacao": {
+                        "description": "\n- 1 - Pendente\n- 2 - Emitida\n- 3 - Cancelada\n- 4 - Enviada Aguardando Recibo\n- 5 - Rejeitada\n- 6 - Autorizada\n- 7 - Emitida Danfe\n- 8 - Registrada\n- 9 - Enviada Aguardando Protocolo\n- 10 - Denegada",
                         "type": "integer",
                         "enum": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            8,
+                            9,
+                            10
+                        ],
+                        "x-enumDescriptions": [
                             "1 - Pendente",
                             "2 - Emitida",
                             "3 - Cancelada",
@@ -11051,8 +11463,7 @@
                             "8 - Registrada",
                             "9 - Enviada Aguardando Protocolo",
                             "10 - Denegada"
-                        ],
-                        "example": "1"
+                        ]
                     },
                     "xml": {
                         "type": "string"
@@ -11065,8 +11476,22 @@
                 "description": " ",
                 "properties": {
                     "situacao": {
+                        "description": "\n- 1 - Pendente\n- 2 - Emitida\n- 3 - Cancelada\n- 4 - Enviada Aguardando Recibo\n- 5 - Rejeitada\n- 6 - Autorizada\n- 7 - Emitida Danfe\n- 8 - Registrada\n- 9 - Enviada Aguardando Protocolo\n- 10 - Denegada",
                         "type": "string",
                         "enum": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            8,
+                            9,
+                            10
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "1 - Pendente",
                             "2 - Emitida",
                             "3 - Cancelada",
@@ -11077,18 +11502,20 @@
                             "8 - Registrada",
                             "9 - Enviada Aguardando Protocolo",
                             "10 - Denegada"
-                        ],
-                        "example": "1",
-                        "nullable": true
+                        ]
                     },
                     "tipo": {
+                        "description": "\n- E - Entrada\n- S - Saida",
                         "type": "string",
                         "enum": [
+                            "E",
+                            "S"
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "E - Entrada",
                             "S - Saida"
-                        ],
-                        "example": "E",
-                        "nullable": true
+                        ]
                     },
                     "numero": {
                         "type": "string",
@@ -11356,8 +11783,19 @@
                                 "type": "integer"
                             },
                             "finalidade": {
+                                "description": "\n- 1 - Nfe Normal\n- 2 - Nfe Complementar\n- 3 - Nfe Ajuste\n- 4 - Devolucao Retorno\n- 7 - Nfe Cupom Referenciado\n- 8 - Devolucao Retorno Sem Nfe\n- 9 - Nfe Chave Acesso Referenciada",
                                 "type": "string",
                                 "enum": [
+                                    1,
+                                    2,
+                                    3,
+                                    4,
+                                    7,
+                                    8,
+                                    9
+                                ],
+                                "nullable": true,
+                                "x-enumDescriptions": [
                                     "1 - Nfe Normal",
                                     "2 - Nfe Complementar",
                                     "3 - Nfe Ajuste",
@@ -11365,20 +11803,24 @@
                                     "7 - Nfe Cupom Referenciado",
                                     "8 - Devolucao Retorno Sem Nfe",
                                     "9 - Nfe Chave Acesso Referenciada"
-                                ],
-                                "example": "1",
-                                "nullable": true
+                                ]
                             },
                             "regimeTributario": {
+                                "description": "\n- 1 - Simples Nacional\n- 2 - Simples Nacional Excesso Receita\n- 3 - Regime Normal\n- 4 - Mei",
                                 "type": "integer",
                                 "enum": [
+                                    1,
+                                    2,
+                                    3,
+                                    4
+                                ],
+                                "nullable": true,
+                                "x-enumDescriptions": [
                                     "1 - Simples Nacional",
                                     "2 - Simples Nacional Excesso Receita",
                                     "3 - Regime Normal",
                                     "4 - Mei"
-                                ],
-                                "example": "1",
-                                "nullable": true
+                                ]
                             },
                             "dataInclusao": {
                                 "type": "string",
@@ -11515,15 +11957,21 @@
                 "description": " ",
                 "properties": {
                     "situacao": {
+                        "description": "\n- 0 - Em Aberto\n- 1 - Atendido\n- 2 - Cancelado\n- 3 - Em Andamento",
                         "type": "integer",
                         "enum": [
+                            0,
+                            1,
+                            2,
+                            3
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "0 - Em Aberto",
                             "1 - Atendido",
                             "2 - Cancelado",
                             "3 - Em Andamento"
-                        ],
-                        "example": "0",
-                        "nullable": true
+                        ]
                     }
                 },
                 "type": "object"
@@ -11558,17 +12006,25 @@
                         "nullable": true
                     },
                     "fretePorConta": {
+                        "description": "\n- R - Remetente\n- D - Destinatario\n- T - Terceiros\n- 3 - Proprio Remetente\n- 4 - Proprio Destinatario\n- S - Sem Transporte",
                         "type": "string",
                         "enum": [
+                            "R",
+                            "D",
+                            "T",
+                            "3",
+                            "4",
+                            "S"
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "R - Remetente",
                             "D - Destinatario",
                             "T - Terceiros",
                             "3 - Proprio Remetente",
                             "4 - Proprio Destinatario",
                             "S - Sem Transporte"
-                        ],
-                        "example": "R",
-                        "nullable": true
+                        ]
                     },
                     "transportador": {
                         "type": "string",
@@ -11629,15 +12085,21 @@
                         "type": "string"
                     },
                     "situacao": {
+                        "description": "\n- 0 - Em Aberto\n- 1 - Atendido\n- 2 - Cancelado\n- 3 - Em Andamento",
                         "type": "string",
                         "enum": [
+                            0,
+                            1,
+                            2,
+                            3
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "0 - Em Aberto",
                             "1 - Atendido",
                             "2 - Cancelado",
                             "3 - Em Andamento"
-                        ],
-                        "example": "0",
-                        "nullable": true
+                        ]
                     }
                 },
                 "type": "object"
@@ -11667,15 +12129,21 @@
                         "type": "string"
                     },
                     "situacao": {
+                        "description": "\n- 0 - Em Aberto\n- 1 - Atendido\n- 2 - Cancelado\n- 3 - Em Andamento",
                         "type": "string",
                         "enum": [
+                            0,
+                            1,
+                            2,
+                            3
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "0 - Em Aberto",
                             "1 - Atendido",
                             "2 - Cancelado",
                             "3 - Em Andamento"
-                        ],
-                        "example": "0",
-                        "nullable": true
+                        ]
                     },
                     "desconto": {
                         "type": "string"
@@ -11705,17 +12173,25 @@
                         "$ref": "#/components/schemas/OrdemCompraNotaFiscalModelResponse"
                     },
                     "fretePorConta": {
+                        "description": "\n- R - Remetente\n- D - Destinatario\n- T - Terceiros\n- 3 - Proprio Remetente\n- 4 - Proprio Destinatario\n- S - Sem Transporte",
                         "type": "string",
                         "enum": [
+                            "R",
+                            "D",
+                            "T",
+                            "3",
+                            "4",
+                            "S"
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "R - Remetente",
                             "D - Destinatario",
                             "T - Terceiros",
                             "3 - Proprio Remetente",
                             "4 - Proprio Destinatario",
                             "S - Sem Transporte"
-                        ],
-                        "example": "R",
-                        "nullable": true
+                        ]
                     },
                     "observacoes": {
                         "type": "string"
@@ -11742,15 +12218,21 @@
                         "type": "string"
                     },
                     "situacao": {
+                        "description": "\n- 0 - Em Aberto\n- 1 - Atendido\n- 2 - Cancelado\n- 3 - Em Andamento",
                         "type": "string",
                         "enum": [
+                            0,
+                            1,
+                            2,
+                            3
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "0 - Em Aberto",
                             "1 - Atendido",
                             "2 - Cancelado",
                             "3 - Em Andamento"
-                        ],
-                        "example": "0",
-                        "nullable": true
+                        ]
                     },
                     "desconto": {
                         "type": "string"
@@ -11792,17 +12274,25 @@
                         }
                     },
                     "fretePorConta": {
+                        "description": "\n- R - Remetente\n- D - Destinatario\n- T - Terceiros\n- 3 - Proprio Remetente\n- 4 - Proprio Destinatario\n- S - Sem Transporte",
                         "type": "string",
                         "enum": [
+                            "R",
+                            "D",
+                            "T",
+                            "3",
+                            "4",
+                            "S"
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "R - Remetente",
                             "D - Destinatario",
                             "T - Terceiros",
                             "3 - Proprio Remetente",
                             "4 - Proprio Destinatario",
                             "S - Sem Transporte"
-                        ],
-                        "example": "R",
-                        "nullable": true
+                        ]
                     },
                     "observacoes": {
                         "type": "string"
@@ -11926,8 +12416,30 @@
                         "$ref": "#/components/schemas/ContaContabilModel"
                     },
                     "meioPagamento": {
+                        "description": "\n- 1 - Dinheiro\n- 2 - Cheque\n- 3 - Cartao Credito\n- 4 - Cartao Debito\n- 5 - Credito Loja\n- 10 - Vale Alimentacao\n- 11 - Vale Refeicao\n- 12 - Vale Presente\n- 13 - Vale Combustivel\n- 14 - Duplicata Mercantil\n- 15 - Boleto\n- 16 - Deposito Bancario\n- 17 - Pix\n- 18 - Transferencia Bancaria Carteira Digital\n- 19 - Fidelidade Cashback Credito Virtual\n- 20 - Pix Estatico\n- 90 - Sem Pagamento\n- 99 - Outros",
                         "type": "string",
                         "enum": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            10,
+                            11,
+                            12,
+                            13,
+                            14,
+                            15,
+                            16,
+                            17,
+                            18,
+                            19,
+                            20,
+                            90,
+                            99
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "1 - Dinheiro",
                             "2 - Cheque",
                             "3 - Cartao Credito",
@@ -11946,9 +12458,7 @@
                             "20 - Pix Estatico",
                             "90 - Sem Pagamento",
                             "99 - Outros"
-                        ],
-                        "example": "1",
-                        "nullable": true
+                        ]
                     },
                     "observacoes": {
                         "type": "string"
@@ -11980,8 +12490,30 @@
                         "$ref": "#/components/schemas/ContaContabilModel"
                     },
                     "meioPagamento": {
+                        "description": "\n- 1 - Dinheiro\n- 2 - Cheque\n- 3 - Cartao Credito\n- 4 - Cartao Debito\n- 5 - Credito Loja\n- 10 - Vale Alimentacao\n- 11 - Vale Refeicao\n- 12 - Vale Presente\n- 13 - Vale Combustivel\n- 14 - Duplicata Mercantil\n- 15 - Boleto\n- 16 - Deposito Bancario\n- 17 - Pix\n- 18 - Transferencia Bancaria Carteira Digital\n- 19 - Fidelidade Cashback Credito Virtual\n- 20 - Pix Estatico\n- 90 - Sem Pagamento\n- 99 - Outros",
                         "type": "string",
                         "enum": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            10,
+                            11,
+                            12,
+                            13,
+                            14,
+                            15,
+                            16,
+                            17,
+                            18,
+                            19,
+                            20,
+                            90,
+                            99
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "1 - Dinheiro",
                             "2 - Cheque",
                             "3 - Cartao Credito",
@@ -12000,9 +12532,7 @@
                             "20 - Pix Estatico",
                             "90 - Sem Pagamento",
                             "99 - Outros"
-                        ],
-                        "example": "1",
-                        "nullable": true
+                        ]
                     },
                     "observacoes": {
                         "type": "string"
@@ -12044,8 +12574,20 @@
                 "description": " ",
                 "properties": {
                     "situacao": {
+                        "description": "\n- 4 - Nao Aprovada\n- 3 - Finalizada\n- 0 - Em Aberto\n- 2 - Serv Concluido\n- 1 - Orcada\n- 5 - Aprovada\n- 6 - Em Andamento\n- 7 - Cancelada",
                         "type": "integer",
                         "enum": [
+                            4,
+                            3,
+                            0,
+                            2,
+                            1,
+                            5,
+                            6,
+                            7
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "4 - Nao Aprovada",
                             "3 - Finalizada",
                             "0 - Em Aberto",
@@ -12054,9 +12596,7 @@
                             "5 - Aprovada",
                             "6 - Em Andamento",
                             "7 - Cancelada"
-                        ],
-                        "example": "4",
-                        "nullable": true
+                        ]
                     }
                 },
                 "type": "object"
@@ -12153,8 +12693,20 @@
                         "nullable": true
                     },
                     "situacao": {
+                        "description": "\n- 4 - Nao Aprovada\n- 3 - Finalizada\n- 0 - Em Aberto\n- 2 - Serv Concluido\n- 1 - Orcada\n- 5 - Aprovada\n- 6 - Em Andamento\n- 7 - Cancelada",
                         "type": "string",
                         "enum": [
+                            4,
+                            3,
+                            0,
+                            2,
+                            1,
+                            5,
+                            6,
+                            7
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "4 - Nao Aprovada",
                             "3 - Finalizada",
                             "0 - Em Aberto",
@@ -12163,9 +12715,7 @@
                             "5 - Aprovada",
                             "6 - Em Andamento",
                             "7 - Cancelada"
-                        ],
-                        "example": "4",
-                        "nullable": true
+                        ]
                     },
                     "data": {
                         "type": "string",
@@ -12199,8 +12749,20 @@
                         "type": "integer"
                     },
                     "situacao": {
+                        "description": "\n- 4 - Nao Aprovada\n- 3 - Finalizada\n- 0 - Em Aberto\n- 2 - Serv Concluido\n- 1 - Orcada\n- 5 - Aprovada\n- 6 - Em Andamento\n- 7 - Cancelada",
                         "type": "string",
                         "enum": [
+                            4,
+                            3,
+                            0,
+                            2,
+                            1,
+                            5,
+                            6,
+                            7
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "4 - Nao Aprovada",
                             "3 - Finalizada",
                             "0 - Em Aberto",
@@ -12209,9 +12771,7 @@
                             "5 - Aprovada",
                             "6 - Em Andamento",
                             "7 - Cancelada"
-                        ],
-                        "example": "4",
-                        "nullable": true
+                        ]
                     },
                     "data": {
                         "type": "string"
@@ -12667,8 +13227,22 @@
                 "description": " ",
                 "properties": {
                     "situacao": {
+                        "description": "\n- 8 - Dados Incompletos\n- 0 - Aberta\n- 3 - Aprovada\n- 4 - Preparando Envio\n- 1 - Faturada\n- 7 - Pronto Envio\n- 5 - Enviada\n- 6 - Entregue\n- 2 - Cancelada\n- 9 - Nao Entregue",
                         "type": "integer",
                         "enum": [
+                            8,
+                            0,
+                            3,
+                            4,
+                            1,
+                            7,
+                            5,
+                            6,
+                            2,
+                            9
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "8 - Dados Incompletos",
                             "0 - Aberta",
                             "3 - Aprovada",
@@ -12679,9 +13253,7 @@
                             "6 - Entregue",
                             "2 - Cancelada",
                             "9 - Nao Entregue"
-                        ],
-                        "example": "8",
-                        "nullable": true
+                        ]
                     }
                 },
                 "type": "object"
@@ -12916,8 +13488,21 @@
                         "nullable": true
                     },
                     "tipoPessoa": {
+                        "description": "\n- J - Juridica\n- F - Fisica\n- E - Estrangeiro\n- X - Estrangeiro No Brasil",
                         "type": "string",
-                        "nullable": true
+                        "enum": [
+                            "J",
+                            "F",
+                            "E",
+                            "X"
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
+                            "J - Juridica",
+                            "F - Fisica",
+                            "E - Estrangeiro",
+                            "X - Estrangeiro No Brasil"
+                        ]
                     },
                     "ie": {
                         "type": "string",
@@ -13146,8 +13731,22 @@
                     {
                         "properties": {
                             "situacao": {
+                                "description": "\n- 8 - Dados Incompletos\n- 0 - Aberta\n- 3 - Aprovada\n- 4 - Preparando Envio\n- 1 - Faturada\n- 7 - Pronto Envio\n- 5 - Enviada\n- 6 - Entregue\n- 2 - Cancelada\n- 9 - Nao Entregue",
                                 "type": "integer",
                                 "enum": [
+                                    8,
+                                    0,
+                                    3,
+                                    4,
+                                    1,
+                                    7,
+                                    5,
+                                    6,
+                                    2,
+                                    9
+                                ],
+                                "nullable": true,
+                                "x-enumDescriptions": [
                                     "8 - Dados Incompletos",
                                     "0 - Aberta",
                                     "3 - Aprovada",
@@ -13158,9 +13757,7 @@
                                     "6 - Entregue",
                                     "2 - Cancelada",
                                     "9 - Nao Entregue"
-                                ],
-                                "example": "8",
-                                "nullable": true
+                                ]
                             },
                             "data": {
                                 "type": "string",
@@ -13333,16 +13930,23 @@
                                 "nullable": true
                             },
                             "tipo": {
+                                "description": "\n- K - Kit\n- S - Simples\n- V - Com Variacoes\n- F - Fabricado\n- M - Materia Prima",
                                 "type": "string",
                                 "enum": [
+                                    "K",
+                                    "S",
+                                    "V",
+                                    "F",
+                                    "M"
+                                ],
+                                "nullable": true,
+                                "x-enumDescriptions": [
                                     "K - Kit",
                                     "S - Simples",
                                     "V - Com Variacoes",
                                     "F - Fabricado",
                                     "M - Materia Prima"
-                                ],
-                                "example": "K",
-                                "nullable": true
+                                ]
                             },
                             "estoque": {
                                 "$ref": "#/components/schemas/CriarProdutoEstoqueRequestModel"
@@ -13685,24 +14289,36 @@
                         "type": "string"
                     },
                     "tipo": {
+                        "description": "\n- K - Kit\n- S - Simples\n- V - Com Variacoes\n- F - Fabricado\n- M - Materia Prima",
                         "type": "string",
                         "enum": [
+                            "K",
+                            "S",
+                            "V",
+                            "F",
+                            "M"
+                        ],
+                        "x-enumDescriptions": [
                             "K - Kit",
                             "S - Simples",
                             "V - Com Variacoes",
                             "F - Fabricado",
                             "M - Materia Prima"
-                        ],
-                        "example": "K"
+                        ]
                     },
                     "situacao": {
+                        "description": "\n- A - Ativo\n- I - Inativo\n- E - Excluido",
                         "type": "string",
                         "enum": [
+                            "A",
+                            "I",
+                            "E"
+                        ],
+                        "x-enumDescriptions": [
                             "A - Ativo",
                             "I - Inativo",
                             "E - Excluido"
-                        ],
-                        "example": "A"
+                        ]
                     },
                     "dataCriacao": {
                         "type": "string",
@@ -13774,26 +14390,38 @@
                                 "nullable": true
                             },
                             "tipo": {
+                                "description": "\n- K - Kit\n- S - Simples\n- V - Com Variacoes\n- F - Fabricado\n- M - Materia Prima",
                                 "type": "string",
                                 "enum": [
+                                    "K",
+                                    "S",
+                                    "V",
+                                    "F",
+                                    "M"
+                                ],
+                                "nullable": true,
+                                "x-enumDescriptions": [
                                     "K - Kit",
                                     "S - Simples",
                                     "V - Com Variacoes",
                                     "F - Fabricado",
                                     "M - Materia Prima"
-                                ],
-                                "example": "K",
-                                "nullable": true
+                                ]
                             },
                             "situacao": {
+                                "description": "\n- A - Ativo\n- I - Inativo\n- E - Excluido",
                                 "type": "string",
                                 "enum": [
+                                    "A",
+                                    "I",
+                                    "E"
+                                ],
+                                "nullable": true,
+                                "x-enumDescriptions": [
                                     "A - Ativo",
                                     "I - Inativo",
                                     "E - Excluido"
-                                ],
-                                "example": "A",
-                                "nullable": true
+                                ]
                             },
                             "produtoPai": {
                                 "$ref": "#/components/schemas/ProdutoResponseModel"
@@ -13815,8 +14443,20 @@
                                 "nullable": true
                             },
                             "origem": {
+                                "description": "\n- 0 - Nacional Exceto Codigo 3 A 5\n- 4 - Nacional Producao Conforme Ajustes\n- 5 - Nacional Conteudo Importacao Inferior 40\n- 3 - Nacional Conteudo Importacao Superior 40\n- 8 - Nacional Conteudo Importacao Superior 70\n- 1 - Estrangeira Importacao Direta Exceto Codigo 6\n- 6 - Estrangeira Importacao Direta Sem Similar\n- 2 - Estrangeira Adquirida Mercado Interno\n- 7 - Estrangeira Adquirida Mercado Interno Sem Similar",
                                 "type": "string",
                                 "enum": [
+                                    0,
+                                    4,
+                                    5,
+                                    3,
+                                    8,
+                                    1,
+                                    6,
+                                    2,
+                                    7
+                                ],
+                                "x-enumDescriptions": [
                                     "0 - Nacional Exceto Codigo 3 A 5",
                                     "4 - Nacional Producao Conforme Ajustes",
                                     "5 - Nacional Conteudo Importacao Inferior 40",
@@ -13826,8 +14466,7 @@
                                     "6 - Estrangeira Importacao Direta Sem Similar",
                                     "2 - Estrangeira Adquirida Mercado Interno",
                                     "7 - Estrangeira Adquirida Mercado Interno Sem Similar"
-                                ],
-                                "example": "0"
+                                ]
                             },
                             "garantia": {
                                 "type": "string",
@@ -14366,15 +15005,21 @@
                 "description": " ",
                 "properties": {
                     "situacao": {
+                        "description": "\n- 1 - Sit Aguardando Separacao\n- 2 - Sit Separada\n- 3 - Sit Embalada\n- 4 - Sit Em Separacao",
                         "type": "integer",
                         "enum": [
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "1 - Sit Aguardando Separacao",
                             "2 - Sit Separada",
                             "3 - Sit Embalada",
                             "4 - Sit Em Separacao"
-                        ],
-                        "example": "1",
-                        "nullable": true
+                        ]
                     }
                 },
                 "type": "object"
@@ -14410,14 +15055,20 @@
                         "type": "integer"
                     },
                     "situacao": {
+                        "description": "\n- 1 - Sit Aguardando Separacao\n- 2 - Sit Separada\n- 3 - Sit Embalada\n- 4 - Sit Em Separacao",
                         "type": "string",
                         "enum": [
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "x-enumDescriptions": [
                             "1 - Sit Aguardando Separacao",
                             "2 - Sit Separada",
                             "3 - Sit Embalada",
                             "4 - Sit Em Separacao"
-                        ],
-                        "example": "1"
+                        ]
                     },
                     "dataCriacao": {
                         "type": "string",
@@ -14458,24 +15109,34 @@
                         "nullable": true
                     },
                     "situacao": {
+                        "description": "\n- 1 - Sit Aguardando Separacao\n- 2 - Sit Separada\n- 3 - Sit Embalada\n- 4 - Sit Em Separacao",
                         "type": "integer",
                         "enum": [
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "1 - Sit Aguardando Separacao",
                             "2 - Sit Separada",
                             "3 - Sit Embalada",
                             "4 - Sit Em Separacao"
-                        ],
-                        "example": "1",
-                        "nullable": true
+                        ]
                     },
                     "situacaoCheckout": {
+                        "description": "\n- 1 - Sit Checkout Disponivel\n- 2 - Sit Checkout Bloqueado",
                         "type": "integer",
                         "enum": [
+                            1,
+                            2
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "1 - Sit Checkout Disponivel",
                             "2 - Sit Checkout Bloqueado"
-                        ],
-                        "example": "1",
-                        "nullable": true
+                        ]
                     },
                     "dataCriacao": {
                         "type": "string",
@@ -14535,8 +15196,22 @@
                         "nullable": true
                     },
                     "situacao": {
+                        "description": "\n- 1 - Pendente\n- 2 - Emitida\n- 3 - Cancelada\n- 4 - Enviada Aguardando Recibo\n- 5 - Rejeitada\n- 6 - Autorizada\n- 7 - Emitida Danfe\n- 8 - Registrada\n- 9 - Enviada Aguardando Protocolo\n- 10 - Denegada",
                         "type": "integer",
                         "enum": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            8,
+                            9,
+                            10
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "1 - Pendente",
                             "2 - Emitida",
                             "3 - Cancelada",
@@ -14547,9 +15222,7 @@
                             "8 - Registrada",
                             "9 - Enviada Aguardando Protocolo",
                             "10 - Denegada"
-                        ],
-                        "example": "1",
-                        "nullable": true
+                        ]
                     }
                 },
                 "type": "object"
@@ -14571,8 +15244,22 @@
                         "nullable": true
                     },
                     "situacao": {
+                        "description": "\n- 8 - Dados Incompletos\n- 0 - Aberta\n- 3 - Aprovada\n- 4 - Preparando Envio\n- 1 - Faturada\n- 7 - Pronto Envio\n- 5 - Enviada\n- 6 - Entregue\n- 2 - Cancelada\n- 9 - Nao Entregue",
                         "type": "integer",
                         "enum": [
+                            8,
+                            0,
+                            3,
+                            4,
+                            1,
+                            7,
+                            5,
+                            6,
+                            2,
+                            9
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "8 - Dados Incompletos",
                             "0 - Aberta",
                             "3 - Aprovada",
@@ -14583,9 +15270,7 @@
                             "6 - Entregue",
                             "2 - Cancelada",
                             "9 - Nao Entregue"
-                        ],
-                        "example": "8",
-                        "nullable": true
+                        ]
                     }
                 },
                 "type": "object"
@@ -14627,18 +15312,39 @@
                         "nullable": true
                     },
                     "situacao": {
+                        "description": "\n- A - Ativo\n- I - Inativo\n- E - Excluido",
                         "type": "string",
                         "enum": [
+                            "A",
+                            "I",
+                            "E"
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "A - Ativo",
                             "I - Inativo",
                             "E - Excluido"
-                        ],
-                        "example": "A",
-                        "nullable": true
+                        ]
                     },
                     "tipoItemSped": {
+                        "description": "\n- 00 - Mercadoria Para Revenda\n- 01 - Materia Prima\n- 02 - Embalagem\n- 03 - Produto Em Processo\n- 04 - Produto Acabado\n- 05 - Subproduto\n- 06 - Produto Intermediario\n- 07 - Material Uso Consumo\n- 08 - Ativo Imobilizado\n- 09 - Servicos\n- 10 - Outros Insumos\n- 99 - Outras",
                         "type": "string",
                         "enum": [
+                            "00",
+                            "01",
+                            "02",
+                            "03",
+                            "04",
+                            "05",
+                            "06",
+                            "07",
+                            "08",
+                            "09",
+                            "10",
+                            "99"
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "00 - Mercadoria Para Revenda",
                             "01 - Materia Prima",
                             "02 - Embalagem",
@@ -14651,9 +15357,7 @@
                             "09 - Servicos",
                             "10 - Outros Insumos",
                             "99 - Outras"
-                        ],
-                        "example": "00",
-                        "nullable": true
+                        ]
                     },
                     "codigoListaServicos": {
                         "type": "string",
@@ -14781,17 +15485,25 @@
                         "nullable": true
                     },
                     "fretePorConta": {
+                        "description": "\n- R - Remetente\n- D - Destinatario\n- T - Terceiros\n- 3 - Proprio Remetente\n- 4 - Proprio Destinatario\n- S - Sem Transporte",
                         "type": "string",
                         "enum": [
+                            "R",
+                            "D",
+                            "T",
+                            "3",
+                            "4",
+                            "S"
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "R - Remetente",
                             "D - Destinatario",
                             "T - Terceiros",
                             "3 - Proprio Remetente",
                             "4 - Proprio Destinatario",
                             "S - Sem Transporte"
-                        ],
-                        "example": "R",
-                        "nullable": true
+                        ]
                     },
                     "formaEnvio": {
                         "$ref": "#/components/schemas/FormaEnvioRequestModel"
@@ -14823,17 +15535,25 @@
                         "nullable": true
                     },
                     "fretePorConta": {
+                        "description": "\n- R - Remetente\n- D - Destinatario\n- T - Terceiros\n- 3 - Proprio Remetente\n- 4 - Proprio Destinatario\n- S - Sem Transporte",
                         "type": "string",
                         "enum": [
+                            "R",
+                            "D",
+                            "T",
+                            "3",
+                            "4",
+                            "S"
+                        ],
+                        "nullable": true,
+                        "x-enumDescriptions": [
                             "R - Remetente",
                             "D - Destinatario",
                             "T - Terceiros",
                             "3 - Proprio Remetente",
                             "4 - Proprio Destinatario",
                             "S - Sem Transporte"
-                        ],
-                        "example": "R",
-                        "nullable": true
+                        ]
                     },
                     "formaEnvio": {
                         "$ref": "#/components/schemas/FormaEnvioResponseModel"
@@ -14921,18 +15641,24 @@
             "situacaoContasPagar": {
                 "name": "situacao",
                 "in": "query",
-                "description": "Pesquisa por situação de contas a pagar",
+                "description": "Pesquisa por situação de contas a pagar\n- aberto - Aberto\n- cancelada - Cancelada\n- pago - Pago\n- parcial - Parcial\n- prevista - Prevista",
                 "required": false,
                 "schema": {
                     "enum": [
-                        "aberto - Aberto",
-                        "cancelada - Cancelada",
-                        "pago - Pago",
-                        "parcial - Parcial",
-                        "prevista - Prevista"
+                        "aberto",
+                        "cancelada",
+                        "pago",
+                        "parcial",
+                        "prevista"
                     ]
                 },
-                "example": "aberto"
+                "x-enumDescriptions": [
+                    "aberto - Aberto",
+                    "cancelada - Cancelada",
+                    "pago - Pago",
+                    "parcial - Parcial",
+                    "prevista - Prevista"
+                ]
             },
             "dataInicialEmissaoContasPagar": {
                 "name": "dataInicialEmissao",
@@ -15026,18 +15752,24 @@
             "situacaoContasReceber": {
                 "name": "situacao",
                 "in": "query",
-                "description": "Pesquisa por situação de contas a receber",
+                "description": "Pesquisa por situação de contas a receber\n- aberto - Aberto\n- cancelada - Cancelada\n- pago - Pago\n- parcial - Parcial\n- prevista - Prevista",
                 "required": false,
                 "schema": {
                     "enum": [
-                        "aberto - Aberto",
-                        "cancelada - Cancelada",
-                        "pago - Pago",
-                        "parcial - Parcial",
-                        "prevista - Prevista"
+                        "aberto",
+                        "cancelada",
+                        "pago",
+                        "parcial",
+                        "prevista"
                     ]
                 },
-                "example": "aberto"
+                "x-enumDescriptions": [
+                    "aberto - Aberto",
+                    "cancelada - Cancelada",
+                    "pago - Pago",
+                    "parcial - Parcial",
+                    "prevista - Prevista"
+                ]
             },
             "dataInicialEmissaoContasReceber": {
                 "name": "dataInicialEmissao",
@@ -15148,17 +15880,22 @@
             "situacaoContato": {
                 "name": "situacao",
                 "in": "query",
-                "description": "Pesquisa por situacao",
+                "description": "Pesquisa por situacao\n- B - Ativo\n- A - Ativo Com Acesso Sistema\n- I - Inativo\n- E - Excluido",
                 "required": false,
                 "schema": {
                     "enum": [
-                        "B - Ativo",
-                        "A - Ativo Com Acesso Sistema",
-                        "I - Inativo",
-                        "E - Excluido"
+                        "B",
+                        "A",
+                        "I",
+                        "E"
                     ]
                 },
-                "example": "B"
+                "x-enumDescriptions": [
+                    "B - Ativo",
+                    "A - Ativo Com Acesso Sistema",
+                    "I - Inativo",
+                    "E - Excluido"
+                ]
             },
             "idVendedorContato": {
                 "name": "idVendedor",
@@ -15268,15 +16005,18 @@
             "orderBy": {
                 "name": "orderBy",
                 "in": "query",
-                "description": "Define a ordenação da listagem por ordem crescente ou decrescente",
+                "description": "Define a ordenação da listagem por ordem crescente ou decrescente\n- asc - Crescente\n- desc - Descrescente",
                 "required": false,
                 "schema": {
                     "enum": [
-                        "asc - Crescente",
-                        "desc - Descrescente"
+                        "asc",
+                        "desc"
                     ]
                 },
-                "example": "asc"
+                "x-enumDescriptions": [
+                    "asc - Crescente",
+                    "desc - Descrescente"
+                ]
             },
             "nomeFormaEnvio": {
                 "name": "nome",
@@ -15290,80 +16030,138 @@
             "tipoFormaEnvio": {
                 "name": "tipo",
                 "in": "query",
-                "description": "Pesquisa por tipo de forma de envio",
+                "description": "Pesquisa por tipo de forma de envio\n- 0 - Sem Frete\n- 1 - Correios\n- 2 - Transportadora\n- 3 - Mercado Envios\n- 4 - B2w Entrega\n- 5 - Correios Ff\n- 6 - Customizado\n- 7 - Jadlog\n- 8 - Totalexpress\n- 9 - Olist\n- 10 - Gateway\n- 11 - Magalu Entregas\n- 12 - Shopee Envios\n- 13 - Ns Entregas\n- 14 - Viavarejo Envvias\n- 15 - Madeira Envios\n- 16 - Ali Envios\n- 17 - Loggi\n- 18 - Conecta La Etiquetas\n- 19 - Amazon Dba\n- 20 - Magalu Fulfillment\n- 21 - Ns Magalu Entregas\n- 22 - Shein Envios\n- 23 - Mandae\n- 24 - Olist Envios\n- 25 - Kwai Envios\n- 26 - Beleza Envios\n- 27 - Tiktok Envios",
                 "required": false,
                 "schema": {
                     "enum": [
-                        "0 - Sem Frete",
-                        "1 - Correios",
-                        "2 - Transportadora",
-                        "3 - Mercado Envios",
-                        "4 - B2w Entrega",
-                        "5 - Correios Ff",
-                        "6 - Customizado",
-                        "7 - Jadlog",
-                        "8 - Totalexpress",
-                        "9 - Olist",
-                        "10 - Gateway",
-                        "11 - Magalu Entregas",
-                        "12 - Shopee Envios",
-                        "13 - Ns Entregas",
-                        "14 - Viavarejo Envvias",
-                        "15 - Madeira Envios",
-                        "16 - Ali Envios",
-                        "17 - Loggi",
-                        "18 - Conecta La Etiquetas",
-                        "19 - Amazon Dba",
-                        "20 - Magalu Fulfillment",
-                        "21 - Ns Magalu Entregas",
-                        "22 - Shein Envios",
-                        "23 - Mandae",
-                        "24 - Olist Envios",
-                        "25 - Kwai Envios",
-                        "26 - Beleza Envios",
-                        "27 - Tiktok Envios"
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27
                     ]
                 },
-                "example": "0"
+                "x-enumDescriptions": [
+                    "0 - Sem Frete",
+                    "1 - Correios",
+                    "2 - Transportadora",
+                    "3 - Mercado Envios",
+                    "4 - B2w Entrega",
+                    "5 - Correios Ff",
+                    "6 - Customizado",
+                    "7 - Jadlog",
+                    "8 - Totalexpress",
+                    "9 - Olist",
+                    "10 - Gateway",
+                    "11 - Magalu Entregas",
+                    "12 - Shopee Envios",
+                    "13 - Ns Entregas",
+                    "14 - Viavarejo Envvias",
+                    "15 - Madeira Envios",
+                    "16 - Ali Envios",
+                    "17 - Loggi",
+                    "18 - Conecta La Etiquetas",
+                    "19 - Amazon Dba",
+                    "20 - Magalu Fulfillment",
+                    "21 - Ns Magalu Entregas",
+                    "22 - Shein Envios",
+                    "23 - Mandae",
+                    "24 - Olist Envios",
+                    "25 - Kwai Envios",
+                    "26 - Beleza Envios",
+                    "27 - Tiktok Envios"
+                ]
             },
             "situacaoFormaEnvio": {
                 "name": "situacao",
                 "in": "query",
-                "description": "Pesquisa por situação da forma de envio",
+                "description": "Pesquisa por situação da forma de envio\n- 0 - Sem Frete\n- 1 - Correios\n- 2 - Transportadora\n- 3 - Mercado Envios\n- 4 - B2w Entrega\n- 5 - Correios Ff\n- 6 - Customizado\n- 7 - Jadlog\n- 8 - Totalexpress\n- 9 - Olist\n- 10 - Gateway\n- 11 - Magalu Entregas\n- 12 - Shopee Envios\n- 13 - Ns Entregas\n- 14 - Viavarejo Envvias\n- 15 - Madeira Envios\n- 16 - Ali Envios\n- 17 - Loggi\n- 18 - Conecta La Etiquetas\n- 19 - Amazon Dba\n- 20 - Magalu Fulfillment\n- 21 - Ns Magalu Entregas\n- 22 - Shein Envios\n- 23 - Mandae\n- 24 - Olist Envios\n- 25 - Kwai Envios\n- 26 - Beleza Envios\n- 27 - Tiktok Envios",
                 "required": false,
                 "schema": {
                     "enum": [
-                        "0 - Sem Frete",
-                        "1 - Correios",
-                        "2 - Transportadora",
-                        "3 - Mercado Envios",
-                        "4 - B2w Entrega",
-                        "5 - Correios Ff",
-                        "6 - Customizado",
-                        "7 - Jadlog",
-                        "8 - Totalexpress",
-                        "9 - Olist",
-                        "10 - Gateway",
-                        "11 - Magalu Entregas",
-                        "12 - Shopee Envios",
-                        "13 - Ns Entregas",
-                        "14 - Viavarejo Envvias",
-                        "15 - Madeira Envios",
-                        "16 - Ali Envios",
-                        "17 - Loggi",
-                        "18 - Conecta La Etiquetas",
-                        "19 - Amazon Dba",
-                        "20 - Magalu Fulfillment",
-                        "21 - Ns Magalu Entregas",
-                        "22 - Shein Envios",
-                        "23 - Mandae",
-                        "24 - Olist Envios",
-                        "25 - Kwai Envios",
-                        "26 - Beleza Envios",
-                        "27 - Tiktok Envios"
+                        0,
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20,
+                        21,
+                        22,
+                        23,
+                        24,
+                        25,
+                        26,
+                        27
                     ]
                 },
-                "example": "0"
+                "x-enumDescriptions": [
+                    "0 - Sem Frete",
+                    "1 - Correios",
+                    "2 - Transportadora",
+                    "3 - Mercado Envios",
+                    "4 - B2w Entrega",
+                    "5 - Correios Ff",
+                    "6 - Customizado",
+                    "7 - Jadlog",
+                    "8 - Totalexpress",
+                    "9 - Olist",
+                    "10 - Gateway",
+                    "11 - Magalu Entregas",
+                    "12 - Shopee Envios",
+                    "13 - Ns Entregas",
+                    "14 - Viavarejo Envvias",
+                    "15 - Madeira Envios",
+                    "16 - Ali Envios",
+                    "17 - Loggi",
+                    "18 - Conecta La Etiquetas",
+                    "19 - Amazon Dba",
+                    "20 - Magalu Fulfillment",
+                    "21 - Ns Magalu Entregas",
+                    "22 - Shein Envios",
+                    "23 - Mandae",
+                    "24 - Olist Envios",
+                    "25 - Kwai Envios",
+                    "26 - Beleza Envios",
+                    "27 - Tiktok Envios"
+                ]
             },
             "nomeFormaPagamento": {
                 "name": "nome",
@@ -15377,15 +16175,18 @@
             "situacaoFormaPagamento": {
                 "name": "situacao",
                 "in": "query",
-                "description": "Pesquisa por situação da forma de pagamento",
+                "description": "Pesquisa por situação da forma de pagamento\n- 1 - Habilitada\n- 2 - Desabilitada",
                 "required": false,
                 "schema": {
                     "enum": [
-                        "1 - Habilitada",
-                        "2 - Desabilitada"
+                        1,
+                        2
                     ]
                 },
-                "example": "1"
+                "x-enumDescriptions": [
+                    "1 - Habilitada",
+                    "2 - Desabilitada"
+                ]
             },
             "nomeIntermediador": {
                 "name": "nome",
@@ -15423,15 +16224,18 @@
             "tipoNota": {
                 "name": "tipo",
                 "in": "query",
-                "description": "Pesquisa por tipo de nota",
+                "description": "Pesquisa por tipo de nota\n- E - Entrada\n- S - Saida",
                 "required": false,
                 "schema": {
                     "enum": [
-                        "E - Entrada",
-                        "S - Saida"
+                        "E",
+                        "S"
                     ]
                 },
-                "example": "E"
+                "x-enumDescriptions": [
+                    "E - Entrada",
+                    "S - Saida"
+                ]
             },
             "numeroNota": {
                 "name": "numero",
@@ -15474,23 +16278,34 @@
             "situacaoNota": {
                 "name": "situacao",
                 "in": "query",
-                "description": "Pesquisa pela situacão da nota",
+                "description": "Pesquisa pela situacão da nota\n- 1 - Pendente\n- 2 - Emitida\n- 3 - Cancelada\n- 4 - Enviada Aguardando Recibo\n- 5 - Rejeitada\n- 6 - Autorizada\n- 7 - Emitida Danfe\n- 8 - Registrada\n- 9 - Enviada Aguardando Protocolo\n- 10 - Denegada",
                 "required": false,
                 "schema": {
                     "enum": [
-                        "1 - Pendente",
-                        "2 - Emitida",
-                        "3 - Cancelada",
-                        "4 - Enviada Aguardando Recibo",
-                        "5 - Rejeitada",
-                        "6 - Autorizada",
-                        "7 - Emitida Danfe",
-                        "8 - Registrada",
-                        "9 - Enviada Aguardando Protocolo",
-                        "10 - Denegada"
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10
                     ]
                 },
-                "example": "1"
+                "x-enumDescriptions": [
+                    "1 - Pendente",
+                    "2 - Emitida",
+                    "3 - Cancelada",
+                    "4 - Enviada Aguardando Recibo",
+                    "5 - Rejeitada",
+                    "6 - Autorizada",
+                    "7 - Emitida Danfe",
+                    "8 - Registrada",
+                    "9 - Enviada Aguardando Protocolo",
+                    "10 - Denegada"
+                ]
             },
             "numeroPedidoEcommerce": {
                 "name": "numeroPedidoEcommerce",
@@ -15591,17 +16406,22 @@
             "situacaoOrdemCompra": {
                 "name": "situacao",
                 "in": "query",
-                "description": "Pesquisa através da situação da ordem de compra",
+                "description": "Pesquisa através da situação da ordem de compra\n- 0 - Em Aberto\n- 1 - Atendido\n- 2 - Cancelado\n- 3 - Em Andamento",
                 "required": false,
                 "schema": {
                     "enum": [
-                        "0 - Em Aberto",
-                        "1 - Atendido",
-                        "2 - Cancelado",
-                        "3 - Em Andamento"
+                        0,
+                        1,
+                        2,
+                        3
                     ]
                 },
-                "example": "0"
+                "x-enumDescriptions": [
+                    "0 - Em Aberto",
+                    "1 - Atendido",
+                    "2 - Cancelado",
+                    "3 - Em Andamento"
+                ]
             },
             "nomeClienteOrdemServico": {
                 "name": "nomeCliente",
@@ -15615,21 +16435,30 @@
             "situacaoOrdemServico": {
                 "name": "situacao",
                 "in": "query",
-                "description": "Pesquisa por situação de ordem de servico",
+                "description": "Pesquisa por situação de ordem de servico\n- 4 - Nao Aprovada\n- 3 - Finalizada\n- 0 - Em Aberto\n- 2 - Serv Concluido\n- 1 - Orcada\n- 5 - Aprovada\n- 6 - Em Andamento\n- 7 - Cancelada",
                 "required": false,
                 "schema": {
                     "enum": [
-                        "4 - Nao Aprovada",
-                        "3 - Finalizada",
-                        "0 - Em Aberto",
-                        "2 - Serv Concluido",
-                        "1 - Orcada",
-                        "5 - Aprovada",
-                        "6 - Em Andamento",
-                        "7 - Cancelada"
+                        4,
+                        3,
+                        0,
+                        2,
+                        1,
+                        5,
+                        6,
+                        7
                     ]
                 },
-                "example": "4"
+                "x-enumDescriptions": [
+                    "4 - Nao Aprovada",
+                    "3 - Finalizada",
+                    "0 - Em Aberto",
+                    "2 - Serv Concluido",
+                    "1 - Orcada",
+                    "5 - Aprovada",
+                    "6 - Em Andamento",
+                    "7 - Cancelada"
+                ]
             },
             "dataInicialEmissaoOrdemServico": {
                 "name": "dataInicialEmissao",
@@ -15748,23 +16577,34 @@
             "situacaoPedido": {
                 "name": "situacao",
                 "in": "query",
-                "description": "Pesquisa com base na situação informada",
+                "description": "Pesquisa com base na situação informada\n- 8 - Dados Incompletos\n- 0 - Aberta\n- 3 - Aprovada\n- 4 - Preparando Envio\n- 1 - Faturada\n- 7 - Pronto Envio\n- 5 - Enviada\n- 6 - Entregue\n- 2 - Cancelada\n- 9 - Nao Entregue",
                 "required": false,
                 "schema": {
                     "enum": [
-                        "8 - Dados Incompletos",
-                        "0 - Aberta",
-                        "3 - Aprovada",
-                        "4 - Preparando Envio",
-                        "1 - Faturada",
-                        "7 - Pronto Envio",
-                        "5 - Enviada",
-                        "6 - Entregue",
-                        "2 - Cancelada",
-                        "9 - Nao Entregue"
+                        8,
+                        0,
+                        3,
+                        4,
+                        1,
+                        7,
+                        5,
+                        6,
+                        2,
+                        9
                     ]
                 },
-                "example": "8"
+                "x-enumDescriptions": [
+                    "8 - Dados Incompletos",
+                    "0 - Aberta",
+                    "3 - Aprovada",
+                    "4 - Preparando Envio",
+                    "1 - Faturada",
+                    "7 - Pronto Envio",
+                    "5 - Enviada",
+                    "6 - Entregue",
+                    "2 - Cancelada",
+                    "9 - Nao Entregue"
+                ]
             },
             "numeroPedidoEcommercePedido": {
                 "name": "numeroPedidoEcommerce",
@@ -15875,17 +16715,22 @@
             "situacaoSeparacao": {
                 "name": "situacao",
                 "in": "query",
-                "description": "Pesquisa por situacao da separação.",
+                "description": "Pesquisa por situacao da separação.\n- 1 - Sit Aguardando Separacao\n- 2 - Sit Separada\n- 3 - Sit Embalada\n- 4 - Sit Em Separacao",
                 "required": false,
                 "schema": {
                     "enum": [
-                        "1 - Sit Aguardando Separacao",
-                        "2 - Sit Separada",
-                        "3 - Sit Embalada",
-                        "4 - Sit Em Separacao"
+                        1,
+                        2,
+                        3,
+                        4
                     ]
                 },
-                "example": "1"
+                "x-enumDescriptions": [
+                    "1 - Sit Aguardando Separacao",
+                    "2 - Sit Separada",
+                    "3 - Sit Embalada",
+                    "4 - Sit Em Separacao"
+                ]
             },
             "idFormaEnvio": {
                 "name": "idFormaEnvio",
@@ -15937,16 +16782,20 @@
             "situacaoServico": {
                 "name": "situacao",
                 "in": "query",
-                "description": "Pesquisa com base na situação informada",
+                "description": "Pesquisa com base na situação informada\n- A - Ativo\n- I - Inativo\n- E - Excluido",
                 "required": false,
                 "schema": {
                     "enum": [
-                        "A - Ativo",
-                        "I - Inativo",
-                        "E - Excluido"
+                        "A",
+                        "I",
+                        "E"
                     ]
                 },
-                "example": "A"
+                "x-enumDescriptions": [
+                    "A - Ativo",
+                    "I - Inativo",
+                    "E - Excluido"
+                ]
             },
             "nomeVendedor": {
                 "name": "nome",
