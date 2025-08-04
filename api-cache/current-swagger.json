@@ -573,6 +573,70 @@
                 ]
             }
         },
+        "/contas-pagar/{idContaPagar}/recebimentos": {
+            "get": {
+                "tags": [
+                    "Contas a pagar"
+                ],
+                "operationId": "ObterRecebimentosContaPagarAction",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Identificador da Conta a Pagar",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/ObterRecebimentosModel"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorDTO"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "503": {
+                        "description": "Service Unavailable"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
         "/contas-receber/{idContaReceber}": {
             "get": {
                 "tags": [
@@ -1074,6 +1138,70 @@
                                     "type": "array",
                                     "items": {
                                         "$ref": "#/components/schemas/ObterMarcadorResponseModel"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ErrorDTO"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "503": {
+                        "description": "Service Unavailable"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        },
+        "/contas-receber/{idContaReceber}/recebimentos": {
+            "get": {
+                "tags": [
+                    "Contas a receber"
+                ],
+                "operationId": "ObterRecebimentosContaReceberAction",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Identificador da Conta a Receber",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/ObterRecebimentosModel"
                                     }
                                 }
                             }
@@ -2705,7 +2833,7 @@
                         "parameter": "tipoFormaEnvio",
                         "name": "tipo",
                         "in": "query",
-                        "description": "Pesquisa por tipo de forma de envio\n- 0 - Sem Frete\n- 1 - Correios\n- 2 - Transportadora\n- 3 - Mercado Envios\n- 4 - B2w Entrega\n- 5 - Correios Ff\n- 6 - Customizado\n- 7 - Jadlog\n- 8 - Totalexpress\n- 9 - Olist\n- 10 - Gateway\n- 11 - Magalu Entregas\n- 12 - Shopee Envios\n- 13 - Ns Entregas\n- 14 - Viavarejo Envvias\n- 15 - Madeira Envios\n- 16 - Ali Envios\n- 17 - Loggi\n- 18 - Conecta La Etiquetas\n- 19 - Amazon Dba\n- 20 - Magalu Fulfillment\n- 21 - Ns Magalu Entregas\n- 22 - Shein Envios\n- 23 - Mandae\n- 24 - Olist Envios\n- 25 - Kwai Envios\n- 26 - Beleza Envios\n- 27 - Tiktok Envios",
+                        "description": "Pesquisa por tipo de forma de envio\n- 0 - Sem Frete\n- 1 - Correios\n- 2 - Transportadora\n- 3 - Mercado Envios\n- 4 - B2w Entrega\n- 5 - Correios Ff\n- 6 - Customizado\n- 7 - Jadlog\n- 8 - Totalexpress\n- 9 - Olist\n- 10 - Gateway\n- 11 - Magalu Entregas\n- 12 - Shopee Envios\n- 13 - Ns Entregas\n- 14 - Viavarejo Envvias\n- 15 - Madeira Envios\n- 16 - Ali Envios\n- 17 - Loggi\n- 18 - Conecta La Etiquetas\n- 19 - Amazon Dba\n- 20 - Magalu Fulfillment\n- 21 - Ns Magalu Entregas\n- 22 - Shein Envios\n- 23 - Mandae\n- 24 - Olist Envios\n- 25 - Kwai Envios\n- 26 - Beleza Envios\n- 27 - Tiktok Envios\n- 28 - Hub Envios",
                         "required": false,
                         "schema": {
                             "enum": [
@@ -2736,7 +2864,8 @@
                                 24,
                                 25,
                                 26,
-                                27
+                                27,
+                                28
                             ]
                         },
                         "x-enumDescriptions": [
@@ -2767,14 +2896,15 @@
                             "24 - Olist Envios",
                             "25 - Kwai Envios",
                             "26 - Beleza Envios",
-                            "27 - Tiktok Envios"
+                            "27 - Tiktok Envios",
+                            "28 - Hub Envios"
                         ]
                     },
                     {
                         "parameter": "situacaoFormaEnvio",
                         "name": "situacao",
                         "in": "query",
-                        "description": "Pesquisa por situação da forma de envio\n- 0 - Sem Frete\n- 1 - Correios\n- 2 - Transportadora\n- 3 - Mercado Envios\n- 4 - B2w Entrega\n- 5 - Correios Ff\n- 6 - Customizado\n- 7 - Jadlog\n- 8 - Totalexpress\n- 9 - Olist\n- 10 - Gateway\n- 11 - Magalu Entregas\n- 12 - Shopee Envios\n- 13 - Ns Entregas\n- 14 - Viavarejo Envvias\n- 15 - Madeira Envios\n- 16 - Ali Envios\n- 17 - Loggi\n- 18 - Conecta La Etiquetas\n- 19 - Amazon Dba\n- 20 - Magalu Fulfillment\n- 21 - Ns Magalu Entregas\n- 22 - Shein Envios\n- 23 - Mandae\n- 24 - Olist Envios\n- 25 - Kwai Envios\n- 26 - Beleza Envios\n- 27 - Tiktok Envios",
+                        "description": "Pesquisa por situação da forma de envio\n- 0 - Sem Frete\n- 1 - Correios\n- 2 - Transportadora\n- 3 - Mercado Envios\n- 4 - B2w Entrega\n- 5 - Correios Ff\n- 6 - Customizado\n- 7 - Jadlog\n- 8 - Totalexpress\n- 9 - Olist\n- 10 - Gateway\n- 11 - Magalu Entregas\n- 12 - Shopee Envios\n- 13 - Ns Entregas\n- 14 - Viavarejo Envvias\n- 15 - Madeira Envios\n- 16 - Ali Envios\n- 17 - Loggi\n- 18 - Conecta La Etiquetas\n- 19 - Amazon Dba\n- 20 - Magalu Fulfillment\n- 21 - Ns Magalu Entregas\n- 22 - Shein Envios\n- 23 - Mandae\n- 24 - Olist Envios\n- 25 - Kwai Envios\n- 26 - Beleza Envios\n- 27 - Tiktok Envios\n- 28 - Hub Envios",
                         "required": false,
                         "schema": {
                             "enum": [
@@ -2805,7 +2935,8 @@
                                 24,
                                 25,
                                 26,
-                                27
+                                27,
+                                28
                             ]
                         },
                         "x-enumDescriptions": [
@@ -2836,7 +2967,8 @@
                             "24 - Olist Envios",
                             "25 - Kwai Envios",
                             "26 - Beleza Envios",
-                            "27 - Tiktok Envios"
+                            "27 - Tiktok Envios",
+                            "28 - Hub Envios"
                         ]
                     },
                     {
@@ -9008,6 +9140,21 @@
                         "format": "float",
                         "nullable": true
                     },
+                    "valorPago": {
+                        "type": "number",
+                        "format": "float",
+                        "nullable": true
+                    },
+                    "multa": {
+                        "type": "number",
+                        "format": "float",
+                        "nullable": true
+                    },
+                    "juros": {
+                        "type": "number",
+                        "format": "float",
+                        "nullable": true
+                    },
                     "contato": {
                         "$ref": "#/components/schemas/ContatoModelResponse"
                     },
@@ -9239,6 +9386,10 @@
                     },
                     "cliente": {
                         "$ref": "#/components/schemas/ContatoModelResponse"
+                    },
+                    "quantidadeParcelasAntecipadas": {
+                        "type": "integer",
+                        "nullable": true
                     }
                 },
                 "type": "object"
@@ -9365,6 +9516,21 @@
                         "format": "float",
                         "nullable": true
                     },
+                    "juros": {
+                        "type": "number",
+                        "format": "float",
+                        "nullable": true
+                    },
+                    "multa": {
+                        "type": "number",
+                        "format": "float",
+                        "nullable": true
+                    },
+                    "valorPago": {
+                        "type": "number",
+                        "format": "float",
+                        "nullable": true
+                    },
                     "cliente": {
                         "$ref": "#/components/schemas/ContatoModelResponse"
                     },
@@ -9380,6 +9546,10 @@
                     },
                     "linkBoleto": {
                         "type": "string",
+                        "nullable": true
+                    },
+                    "quantidadeParcelasAntecipadas": {
+                        "type": "integer",
                         "nullable": true
                     }
                 },
@@ -10777,7 +10947,7 @@
                         "nullable": true
                     },
                     "tipo": {
-                        "description": "\n- 0 - Sem Frete\n- 1 - Correios\n- 2 - Transportadora\n- 3 - Mercado Envios\n- 4 - B2w Entrega\n- 5 - Correios Ff\n- 6 - Customizado\n- 7 - Jadlog\n- 8 - Totalexpress\n- 9 - Olist\n- 10 - Gateway\n- 11 - Magalu Entregas\n- 12 - Shopee Envios\n- 13 - Ns Entregas\n- 14 - Viavarejo Envvias\n- 15 - Madeira Envios\n- 16 - Ali Envios\n- 17 - Loggi\n- 18 - Conecta La Etiquetas\n- 19 - Amazon Dba\n- 20 - Magalu Fulfillment\n- 21 - Ns Magalu Entregas\n- 22 - Shein Envios\n- 23 - Mandae\n- 24 - Olist Envios\n- 25 - Kwai Envios\n- 26 - Beleza Envios\n- 27 - Tiktok Envios",
+                        "description": "\n- 0 - Sem Frete\n- 1 - Correios\n- 2 - Transportadora\n- 3 - Mercado Envios\n- 4 - B2w Entrega\n- 5 - Correios Ff\n- 6 - Customizado\n- 7 - Jadlog\n- 8 - Totalexpress\n- 9 - Olist\n- 10 - Gateway\n- 11 - Magalu Entregas\n- 12 - Shopee Envios\n- 13 - Ns Entregas\n- 14 - Viavarejo Envvias\n- 15 - Madeira Envios\n- 16 - Ali Envios\n- 17 - Loggi\n- 18 - Conecta La Etiquetas\n- 19 - Amazon Dba\n- 20 - Magalu Fulfillment\n- 21 - Ns Magalu Entregas\n- 22 - Shein Envios\n- 23 - Mandae\n- 24 - Olist Envios\n- 25 - Kwai Envios\n- 26 - Beleza Envios\n- 27 - Tiktok Envios\n- 28 - Hub Envios",
                         "type": "string",
                         "enum": [
                             0,
@@ -10807,7 +10977,8 @@
                             24,
                             25,
                             26,
-                            27
+                            27,
+                            28
                         ],
                         "nullable": true,
                         "x-enumDescriptions": [
@@ -10838,7 +11009,8 @@
                             "24 - Olist Envios",
                             "25 - Kwai Envios",
                             "26 - Beleza Envios",
-                            "27 - Tiktok Envios"
+                            "27 - Tiktok Envios",
+                            "28 - Hub Envios"
                         ]
                     },
                     "situacao": {
@@ -15000,6 +15172,46 @@
                 },
                 "type": "object"
             },
+            "ObterRecebimentosModel": {
+                "title": " ",
+                "description": " ",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "data": {
+                        "type": "string"
+                    },
+                    "idConta": {
+                        "type": "string"
+                    },
+                    "valorPago": {
+                        "type": "number",
+                        "format": "float"
+                    },
+                    "valorTaxa": {
+                        "type": "number",
+                        "format": "float"
+                    },
+                    "valorJuro": {
+                        "type": "number",
+                        "format": "float"
+                    },
+                    "valorDesconto": {
+                        "type": "number",
+                        "format": "float"
+                    },
+                    "valorAcrescimo": {
+                        "type": "number",
+                        "format": "float"
+                    },
+                    "tipo": {
+                        "type": "integer",
+                        "nullable": true
+                    }
+                },
+                "type": "object"
+            },
             "AlterarSituacaoSeparacaoModelRequest": {
                 "title": " ",
                 "description": " ",
@@ -16030,7 +16242,7 @@
             "tipoFormaEnvio": {
                 "name": "tipo",
                 "in": "query",
-                "description": "Pesquisa por tipo de forma de envio\n- 0 - Sem Frete\n- 1 - Correios\n- 2 - Transportadora\n- 3 - Mercado Envios\n- 4 - B2w Entrega\n- 5 - Correios Ff\n- 6 - Customizado\n- 7 - Jadlog\n- 8 - Totalexpress\n- 9 - Olist\n- 10 - Gateway\n- 11 - Magalu Entregas\n- 12 - Shopee Envios\n- 13 - Ns Entregas\n- 14 - Viavarejo Envvias\n- 15 - Madeira Envios\n- 16 - Ali Envios\n- 17 - Loggi\n- 18 - Conecta La Etiquetas\n- 19 - Amazon Dba\n- 20 - Magalu Fulfillment\n- 21 - Ns Magalu Entregas\n- 22 - Shein Envios\n- 23 - Mandae\n- 24 - Olist Envios\n- 25 - Kwai Envios\n- 26 - Beleza Envios\n- 27 - Tiktok Envios",
+                "description": "Pesquisa por tipo de forma de envio\n- 0 - Sem Frete\n- 1 - Correios\n- 2 - Transportadora\n- 3 - Mercado Envios\n- 4 - B2w Entrega\n- 5 - Correios Ff\n- 6 - Customizado\n- 7 - Jadlog\n- 8 - Totalexpress\n- 9 - Olist\n- 10 - Gateway\n- 11 - Magalu Entregas\n- 12 - Shopee Envios\n- 13 - Ns Entregas\n- 14 - Viavarejo Envvias\n- 15 - Madeira Envios\n- 16 - Ali Envios\n- 17 - Loggi\n- 18 - Conecta La Etiquetas\n- 19 - Amazon Dba\n- 20 - Magalu Fulfillment\n- 21 - Ns Magalu Entregas\n- 22 - Shein Envios\n- 23 - Mandae\n- 24 - Olist Envios\n- 25 - Kwai Envios\n- 26 - Beleza Envios\n- 27 - Tiktok Envios\n- 28 - Hub Envios",
                 "required": false,
                 "schema": {
                     "enum": [
@@ -16061,7 +16273,8 @@
                         24,
                         25,
                         26,
-                        27
+                        27,
+                        28
                     ]
                 },
                 "x-enumDescriptions": [
@@ -16092,13 +16305,14 @@
                     "24 - Olist Envios",
                     "25 - Kwai Envios",
                     "26 - Beleza Envios",
-                    "27 - Tiktok Envios"
+                    "27 - Tiktok Envios",
+                    "28 - Hub Envios"
                 ]
             },
             "situacaoFormaEnvio": {
                 "name": "situacao",
                 "in": "query",
-                "description": "Pesquisa por situação da forma de envio\n- 0 - Sem Frete\n- 1 - Correios\n- 2 - Transportadora\n- 3 - Mercado Envios\n- 4 - B2w Entrega\n- 5 - Correios Ff\n- 6 - Customizado\n- 7 - Jadlog\n- 8 - Totalexpress\n- 9 - Olist\n- 10 - Gateway\n- 11 - Magalu Entregas\n- 12 - Shopee Envios\n- 13 - Ns Entregas\n- 14 - Viavarejo Envvias\n- 15 - Madeira Envios\n- 16 - Ali Envios\n- 17 - Loggi\n- 18 - Conecta La Etiquetas\n- 19 - Amazon Dba\n- 20 - Magalu Fulfillment\n- 21 - Ns Magalu Entregas\n- 22 - Shein Envios\n- 23 - Mandae\n- 24 - Olist Envios\n- 25 - Kwai Envios\n- 26 - Beleza Envios\n- 27 - Tiktok Envios",
+                "description": "Pesquisa por situação da forma de envio\n- 0 - Sem Frete\n- 1 - Correios\n- 2 - Transportadora\n- 3 - Mercado Envios\n- 4 - B2w Entrega\n- 5 - Correios Ff\n- 6 - Customizado\n- 7 - Jadlog\n- 8 - Totalexpress\n- 9 - Olist\n- 10 - Gateway\n- 11 - Magalu Entregas\n- 12 - Shopee Envios\n- 13 - Ns Entregas\n- 14 - Viavarejo Envvias\n- 15 - Madeira Envios\n- 16 - Ali Envios\n- 17 - Loggi\n- 18 - Conecta La Etiquetas\n- 19 - Amazon Dba\n- 20 - Magalu Fulfillment\n- 21 - Ns Magalu Entregas\n- 22 - Shein Envios\n- 23 - Mandae\n- 24 - Olist Envios\n- 25 - Kwai Envios\n- 26 - Beleza Envios\n- 27 - Tiktok Envios\n- 28 - Hub Envios",
                 "required": false,
                 "schema": {
                     "enum": [
@@ -16129,7 +16343,8 @@
                         24,
                         25,
                         26,
-                        27
+                        27,
+                        28
                     ]
                 },
                 "x-enumDescriptions": [
@@ -16160,7 +16375,8 @@
                     "24 - Olist Envios",
                     "25 - Kwai Envios",
                     "26 - Beleza Envios",
-                    "27 - Tiktok Envios"
+                    "27 - Tiktok Envios",
+                    "28 - Hub Envios"
                 ]
             },
             "nomeFormaPagamento": {
